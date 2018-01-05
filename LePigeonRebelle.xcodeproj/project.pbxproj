@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42429BC41FFFD26800B65BDD /* ExpenseAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42429BC31FFFD26800B65BDD /* ExpenseAddViewController.swift */; };
+		42429BC82000371B00B65BDD /* GroupExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42429BC72000371B00B65BDD /* GroupExpensesViewController.swift */; };
+		42429BCA200037A700B65BDD /* GroupDebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42429BC9200037A700B65BDD /* GroupDebtsViewController.swift */; };
 		8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */; };
 		8822C4CE1FFAC8A900EF325E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4CD1FFAC8A900EF325E /* ViewController.swift */; };
 		8822C4D11FFAC8A900EF325E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8822C4CF1FFAC8A900EF325E /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42429BC31FFFD26800B65BDD /* ExpenseAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseAddViewController.swift; sourceTree = "<group>"; };
+		42429BC72000371B00B65BDD /* GroupExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupExpensesViewController.swift; sourceTree = "<group>"; };
+		42429BC9200037A700B65BDD /* GroupDebtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDebtsViewController.swift; sourceTree = "<group>"; };
 		8822C4C81FFAC8A900EF325E /* LePigeonRebelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LePigeonRebelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8822C4CD1FFAC8A900EF325E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */,
 				8822C4CD1FFAC8A900EF325E /* ViewController.swift */,
 				8822C4CF1FFAC8A900EF325E /* Main.storyboard */,
+				42429BC9200037A700B65BDD /* GroupDebtsViewController.swift */,
+				42429BC72000371B00B65BDD /* GroupExpensesViewController.swift */,
+				42429BC31FFFD26800B65BDD /* ExpenseAddViewController.swift */,
 				8822C4D51FFAC8A900EF325E /* Assets.xcassets */,
 				8822C4D71FFAC8A900EF325E /* LaunchScreen.storyboard */,
 				8822C4DA1FFAC8A900EF325E /* Info.plist */,
@@ -140,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8822C4CE1FFAC8A900EF325E /* ViewController.swift in Sources */,
+				42429BCA200037A700B65BDD /* GroupDebtsViewController.swift in Sources */,
+				42429BC41FFFD26800B65BDD /* ExpenseAddViewController.swift in Sources */,
 				8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */,
+				42429BC82000371B00B65BDD /* GroupExpensesViewController.swift in Sources */,
 				8822C4D41FFAC8A900EF325E /* LePigeonRebelle.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +315,7 @@
 				8822C4DF1FFAC8A900EF325E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
