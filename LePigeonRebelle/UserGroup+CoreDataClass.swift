@@ -1,5 +1,5 @@
 //
-//  GroupType+CoreDataClass.swift
+//  UserGroup+CoreDataClass.swift
 //  LePigeonRebelle
 //
 //  Created by iMac on 06/01/2018.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(GroupType)
-public class GroupType: NSManagedObject {
+@objc(UserGroup)
+public class UserGroup: NSManagedObject {
 
 }

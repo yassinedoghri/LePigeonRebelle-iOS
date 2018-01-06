@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  LePigeonRebelle
 //
-//  Created by iMac on 05/01/2018.
+//  Created by iMac on 06/01/2018.
 //  Copyright © 2018 Le Pigeon Rebelle. All rights reserved.
 //
 
@@ -16,62 +16,61 @@ extension User {
         return NSFetchRequest<User>(entityName: "User");
     }
 
-    @NSManaged public var idUser: Int16
     @NSManaged public var name: String?
-    @NSManaged public var defaultUser: DefaultUser?
-    @NSManaged public var user_expense_Owing: NSSet?
-    @NSManaged public var user_group: NSSet?
-    @NSManaged public var user_expense_Paying: NSSet?
+    @NSManaged public var isDefaultUser: Bool
+    @NSManaged public var debtsOwing: NSSet?
+    @NSManaged public var debtsPaying: NSSet?
+    @NSManaged public var userGroupList: NSSet?
 
 }
 
-// MARK: Generated accessors for user_expense_Owing
+// MARK: Generated accessors for debtsOwing
 extension User {
 
-    @objc(addUser_expense_OwingObject:)
-    @NSManaged public func addToUser_expense_Owing(_ value: User_Expense)
+    @objc(addDebtsOwingObject:)
+    @NSManaged public func addToDebtsOwing(_ value: Debt)
 
-    @objc(removeUser_expense_OwingObject:)
-    @NSManaged public func removeFromUser_expense_Owing(_ value: User_Expense)
+    @objc(removeDebtsOwingObject:)
+    @NSManaged public func removeFromDebtsOwing(_ value: Debt)
 
-    @objc(addUser_expense_Owing:)
-    @NSManaged public func addToUser_expense_Owing(_ values: NSSet)
+    @objc(addDebtsOwing:)
+    @NSManaged public func addToDebtsOwing(_ values: NSSet)
 
-    @objc(removeUser_expense_Owing:)
-    @NSManaged public func removeFromUser_expense_Owing(_ values: NSSet)
+    @objc(removeDebtsOwing:)
+    @NSManaged public func removeFromDebtsOwing(_ values: NSSet)
 
 }
 
-// MARK: Generated accessors for user_group
+// MARK: Generated accessors for debtsPaying
 extension User {
 
-    @objc(addUser_groupObject:)
-    @NSManaged public func addToUser_group(_ value: User_Group)
+    @objc(addDebtsPayingObject:)
+    @NSManaged public func addToDebtsPaying(_ value: Debt)
 
-    @objc(removeUser_groupObject:)
-    @NSManaged public func removeFromUser_group(_ value: User_Group)
+    @objc(removeDebtsPayingObject:)
+    @NSManaged public func removeFromDebtsPaying(_ value: Debt)
 
-    @objc(addUser_group:)
-    @NSManaged public func addToUser_group(_ values: NSSet)
+    @objc(addDebtsPaying:)
+    @NSManaged public func addToDebtsPaying(_ values: NSSet)
 
-    @objc(removeUser_group:)
-    @NSManaged public func removeFromUser_group(_ values: NSSet)
+    @objc(removeDebtsPaying:)
+    @NSManaged public func removeFromDebtsPaying(_ values: NSSet)
 
 }
 
-// MARK: Generated accessors for user_expense_Paying
+// MARK: Generated accessors for userGroupList
 extension User {
 
-    @objc(addUser_expense_PayingObject:)
-    @NSManaged public func addToUser_expense_Paying(_ value: User_Expense)
+    @objc(addUserGroupListObject:)
+    @NSManaged public func addToUserGroupList(_ value: UserGroup)
 
-    @objc(removeUser_expense_PayingObject:)
-    @NSManaged public func removeFromUser_expense_Paying(_ value: User_Expense)
+    @objc(removeUserGroupListObject:)
+    @NSManaged public func removeFromUserGroupList(_ value: UserGroup)
 
-    @objc(addUser_expense_Paying:)
-    @NSManaged public func addToUser_expense_Paying(_ values: NSSet)
+    @objc(addUserGroupList:)
+    @NSManaged public func addToUserGroupList(_ values: NSSet)
 
-    @objc(removeUser_expense_Paying:)
-    @NSManaged public func removeFromUser_expense_Paying(_ values: NSSet)
+    @objc(removeUserGroupList:)
+    @NSManaged public func removeFromUserGroupList(_ values: NSSet)
 
 }

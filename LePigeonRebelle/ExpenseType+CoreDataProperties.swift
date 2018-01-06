@@ -2,7 +2,7 @@
 //  ExpenseType+CoreDataProperties.swift
 //  LePigeonRebelle
 //
-//  Created by iMac on 05/01/2018.
+//  Created by iMac on 06/01/2018.
 //  Copyright © 2018 Le Pigeon Rebelle. All rights reserved.
 //
 
@@ -17,23 +17,23 @@ extension ExpenseType {
     }
 
     @NSManaged public var wording: String?
-    @NSManaged public var expense: NSSet?
+    @NSManaged public var expenses: NSSet?
 
 }
 
-// MARK: Generated accessors for expense
+// MARK: Generated accessors for expenses
 extension ExpenseType {
 
-    @objc(addExpenseObject:)
-    @NSManaged public func addToExpense(_ value: Expense)
+    @objc(addExpensesObject:)
+    @NSManaged public func addToExpenses(_ value: Expense)
 
-    @objc(removeExpenseObject:)
-    @NSManaged public func removeFromExpense(_ value: Expense)
+    @objc(removeExpensesObject:)
+    @NSManaged public func removeFromExpenses(_ value: Expense)
 
-    @objc(addExpense:)
-    @NSManaged public func addToExpense(_ values: NSSet)
+    @objc(addExpenses:)
+    @NSManaged public func addToExpenses(_ values: NSSet)
 
-    @objc(removeExpense:)
-    @NSManaged public func removeFromExpense(_ values: NSSet)
+    @objc(removeExpenses:)
+    @NSManaged public func removeFromExpenses(_ values: NSSet)
 
 }

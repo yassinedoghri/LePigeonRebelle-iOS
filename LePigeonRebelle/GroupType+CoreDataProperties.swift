@@ -2,7 +2,7 @@
 //  GroupType+CoreDataProperties.swift
 //  LePigeonRebelle
 //
-//  Created by iMac on 05/01/2018.
+//  Created by iMac on 06/01/2018.
 //  Copyright © 2018 Le Pigeon Rebelle. All rights reserved.
 //
 
@@ -16,25 +16,25 @@ extension GroupType {
         return NSFetchRequest<GroupType>(entityName: "GroupType");
     }
 
-    @NSManaged public var wording: String?
     @NSManaged public var icon: String?
-    @NSManaged public var group: NSSet?
+    @NSManaged public var wording: String?
+    @NSManaged public var groups: NSSet?
 
 }
 
-// MARK: Generated accessors for group
+// MARK: Generated accessors for groups
 extension GroupType {
 
-    @objc(addGroupObject:)
-    @NSManaged public func addToGroup(_ value: Group)
+    @objc(addGroupsObject:)
+    @NSManaged public func addToGroups(_ value: Group)
 
-    @objc(removeGroupObject:)
-    @NSManaged public func removeFromGroup(_ value: Group)
+    @objc(removeGroupsObject:)
+    @NSManaged public func removeFromGroups(_ value: Group)
 
-    @objc(addGroup:)
-    @NSManaged public func addToGroup(_ values: NSSet)
+    @objc(addGroups:)
+    @NSManaged public func addToGroups(_ values: NSSet)
 
-    @objc(removeGroup:)
-    @NSManaged public func removeFromGroup(_ values: NSSet)
+    @objc(removeGroups:)
+    @NSManaged public func removeFromGroups(_ values: NSSet)
 
 }

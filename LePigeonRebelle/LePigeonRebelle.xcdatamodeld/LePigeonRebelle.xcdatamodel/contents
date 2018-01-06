@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="DefaultUser" representedClassName="DefaultUser" syncable="YES">
-        <attribute name="idDefaultUser" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="defaultUser" inverseEntity="User" syncable="YES"/>
+    <entity name="Debt" representedClassName="Debt" syncable="YES">
+        <attribute name="amount" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="expense" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="debts" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="userOwing" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="debtsOwing" inverseEntity="User" syncable="YES"/>
+        <relationship name="userPaying" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="debtsPaying" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="Expense" representedClassName="Expense" syncable="YES">
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="expenseDescription" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="expenseCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseCategory" inverseName="expense" inverseEntity="ExpenseCategory" syncable="YES"/>
-        <relationship name="expenseType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseType" inverseName="expense" inverseEntity="ExpenseType" syncable="YES"/>
-        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="expense" inverseEntity="Group" syncable="YES"/>
-        <relationship name="user_expense" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_Expense" inverseName="expense" inverseEntity="User_Expense" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="desc" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseCategory" inverseName="expenses" inverseEntity="ExpenseCategory" syncable="YES"/>
+        <relationship name="debts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Debt" inverseName="expense" inverseEntity="Debt" syncable="YES"/>
+        <relationship name="group" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="expenses" inverseEntity="Group" syncable="YES"/>
+        <relationship name="type" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseType" inverseName="expenses" inverseEntity="ExpenseType" syncable="YES"/>
     </entity>
     <entity name="ExpenseCategory" representedClassName="ExpenseCategory" syncable="YES">
         <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="wording" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="expense" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="expenseCategory" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="category" inverseEntity="Expense" syncable="YES"/>
     </entity>
     <entity name="ExpenseType" representedClassName="ExpenseType" syncable="YES">
-        <attribute name="wording" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="expense" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="expenseType" inverseEntity="Expense" syncable="YES"/>
+        <attribute name="wording" attributeType="String" syncable="YES"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="type" inverseEntity="Expense" syncable="YES"/>
     </entity>
     <entity name="Group" representedClassName="Group" syncable="YES">
         <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
-        <relationship name="expense" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="group" inverseEntity="Expense" syncable="YES"/>
-        <relationship name="groupType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupType" inverseName="group" inverseEntity="GroupType" syncable="YES"/>
-        <relationship name="user_group" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_Group" inverseName="group" inverseEntity="User_Group" syncable="YES"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="group" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupType" inverseName="groups" inverseEntity="GroupType" syncable="YES"/>
+        <relationship name="userGroupList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserGroup" inverseName="group" inverseEntity="UserGroup" syncable="YES"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="name"/>
@@ -36,35 +38,28 @@
     <entity name="GroupType" representedClassName="GroupType" syncable="YES">
         <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="wording" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="group" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="groupType" inverseEntity="Group" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="type" inverseEntity="Group" syncable="YES"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="defaultUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DefaultUser" inverseName="user" inverseEntity="DefaultUser" syncable="YES"/>
-        <relationship name="user_expense_Owing" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_Expense" inverseName="userOwing" inverseEntity="User_Expense" syncable="YES"/>
-        <relationship name="user_expense_Paying" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_Expense" inverseName="userPaying" inverseEntity="User_Expense" syncable="YES"/>
-        <relationship name="user_group" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_Group" inverseName="user" inverseEntity="User_Group" syncable="YES"/>
+        <attribute name="isDefaultUser" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="debtsOwing" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Debt" inverseName="userOwing" inverseEntity="Debt" syncable="YES"/>
+        <relationship name="debtsPaying" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Debt" inverseName="userPaying" inverseEntity="Debt" syncable="YES"/>
+        <relationship name="userGroupList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserGroup" inverseName="user" inverseEntity="UserGroup" syncable="YES"/>
     </entity>
-    <entity name="User_Expense" representedClassName="User_Expense" syncable="YES">
-        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="expense" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="user_expense" inverseEntity="Expense" syncable="YES"/>
-        <relationship name="userOwing" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="user_expense_Owing" inverseEntity="User" syncable="YES"/>
-        <relationship name="userPaying" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="user_expense_Paying" inverseEntity="User" syncable="YES"/>
-    </entity>
-    <entity name="User_Group" representedClassName="User_Group" syncable="YES">
+    <entity name="UserGroup" representedClassName="UserGroup" syncable="YES">
         <attribute name="budget" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
-        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="user_group" inverseEntity="Group" syncable="YES"/>
-        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="user_group" inverseEntity="User" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="userGroupList" inverseEntity="Group" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="userGroupList" inverseEntity="User" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DefaultUser" positionX="-423" positionY="-198" width="128" height="73"/>
-        <element name="Expense" positionX="-261" positionY="279" width="128" height="150"/>
-        <element name="ExpenseCategory" positionX="99" positionY="83" width="128" height="88"/>
+        <element name="Expense" positionX="-261" positionY="279" width="128" height="148"/>
+        <element name="ExpenseCategory" positionX="124" positionY="81" width="128" height="88"/>
         <element name="ExpenseType" positionX="133" positionY="269" width="128" height="73"/>
-        <element name="Group" positionX="-74" positionY="-55" width="128" height="105"/>
-        <element name="GroupType" positionX="108" positionY="-36" width="128" height="88"/>
-        <element name="User" positionX="-434" positionY="-63" width="128" height="120"/>
-        <element name="User_Expense" positionX="-432" positionY="185" width="128" height="103"/>
-        <element name="User_Group" positionX="-261" positionY="-106" width="128" height="88"/>
+        <element name="Group" positionX="-83" positionY="-108" width="128" height="103"/>
+        <element name="GroupType" positionX="250" positionY="-108" width="128" height="88"/>
+        <element name="User" positionX="-677" positionY="-81" width="128" height="118"/>
+        <element name="Debt" positionX="-657" positionY="239" width="128" height="103"/>
+        <element name="UserGroup" positionX="-387" positionY="-108" width="128" height="90"/>
     </elements>
 </model>

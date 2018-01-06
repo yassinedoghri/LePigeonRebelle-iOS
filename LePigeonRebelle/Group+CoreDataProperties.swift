@@ -2,7 +2,7 @@
 //  Group+CoreDataProperties.swift
 //  LePigeonRebelle
 //
-//  Created by iMac on 05/01/2018.
+//  Created by iMac on 06/01/2018.
 //  Copyright © 2018 Le Pigeon Rebelle. All rights reserved.
 //
 
@@ -16,43 +16,43 @@ extension Group {
         return NSFetchRequest<Group>(entityName: "Group");
     }
 
-    @NSManaged public var name: String
-    @NSManaged public var groupType: GroupType?
-    @NSManaged public var user_group: NSSet?
-    @NSManaged public var expense: NSSet?
+    @NSManaged public var name: String?
+    @NSManaged public var expenses: NSSet?
+    @NSManaged public var type: GroupType?
+    @NSManaged public var userGroupList: NSSet?
 
 }
 
-// MARK: Generated accessors for user_group
+// MARK: Generated accessors for expenses
 extension Group {
 
-    @objc(addUser_groupObject:)
-    @NSManaged public func addToUser_group(_ value: User_Group)
+    @objc(addExpensesObject:)
+    @NSManaged public func addToExpenses(_ value: Expense)
 
-    @objc(removeUser_groupObject:)
-    @NSManaged public func removeFromUser_group(_ value: User_Group)
+    @objc(removeExpensesObject:)
+    @NSManaged public func removeFromExpenses(_ value: Expense)
 
-    @objc(addUser_group:)
-    @NSManaged public func addToUser_group(_ values: NSSet)
+    @objc(addExpenses:)
+    @NSManaged public func addToExpenses(_ values: NSSet)
 
-    @objc(removeUser_group:)
-    @NSManaged public func removeFromUser_group(_ values: NSSet)
+    @objc(removeExpenses:)
+    @NSManaged public func removeFromExpenses(_ values: NSSet)
 
 }
 
-// MARK: Generated accessors for expense
+// MARK: Generated accessors for userGroupList
 extension Group {
 
-    @objc(addExpenseObject:)
-    @NSManaged public func addToExpense(_ value: Expense)
+    @objc(addUserGroupListObject:)
+    @NSManaged public func addToUserGroupList(_ value: UserGroup)
 
-    @objc(removeExpenseObject:)
-    @NSManaged public func removeFromExpense(_ value: Expense)
+    @objc(removeUserGroupListObject:)
+    @NSManaged public func removeFromUserGroupList(_ value: UserGroup)
 
-    @objc(addExpense:)
-    @NSManaged public func addToExpense(_ values: NSSet)
+    @objc(addUserGroupList:)
+    @NSManaged public func addToUserGroupList(_ values: NSSet)
 
-    @objc(removeExpense:)
-    @NSManaged public func removeFromExpense(_ values: NSSet)
+    @objc(removeUserGroupList:)
+    @NSManaged public func removeFromUserGroupList(_ values: NSSet)
 
 }

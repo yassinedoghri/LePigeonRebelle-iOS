@@ -1,5 +1,5 @@
 //
-//  GroupType+CoreDataClass.swift
+//  Debt+CoreDataClass.swift
 //  LePigeonRebelle
 //
 //  Created by iMac on 06/01/2018.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(GroupType)
-public class GroupType: NSManagedObject {
+@objc(Debt)
+public class Debt: NSManagedObject {
 
 }
