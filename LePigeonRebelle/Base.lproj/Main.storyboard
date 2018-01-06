@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
         <!--LePigeonRebelle-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LePigeonRebelle" id="BYZ-38-t0r" customClass="ViewController" customModule="LePigeonRebelle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LePigeonRebelle" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="LePigeonRebelle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -234,39 +234,36 @@
         <!--New Group -->
         <scene sceneID="WgS-FH-qda">
             <objects>
-                <viewController title="New Group " id="O5A-eZ-DU1" customClass="NewGroupViewController" customModule="LePigeonRebelle" sceneMemberID="viewController">
+                <viewController title="New Group " hidesBottomBarWhenPushed="YES" id="O5A-eZ-DU1" customClass="NewGroupViewController" customModule="LePigeonRebelle" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bnc-t5-7lT"/>
                         <viewControllerLayoutGuide type="bottom" id="lIg-dJ-xnC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="e5P-bK-FiS">
+                    <view key="view" contentMode="scaleToFill" id="e5P-bK-FiS">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-Wf-SH3">
-                                <rect key="frame" x="30" y="115" width="240" height="426"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-Wf-SH3">
+                                <rect key="frame" x="10" y="20" width="355" height="563"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter the group name" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-1v-i4v">
-                                        <rect key="frame" x="0.0" y="0.0" width="188" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter the group name" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-1v-i4v">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-HS-qGY">
-                                        <rect key="frame" x="0.0" y="90" width="72" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-HS-qGY">
+                                        <rect key="frame" x="141.5" y="90" width="72" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="246" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-Qc-WPa">
-                                        <rect key="frame" x="0.0" y="170.5" width="240" height="165.5"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="246" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-Qc-WPa">
+                                        <rect key="frame" x="57.5" y="170.5" width="240" height="303.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="AEJ-bd-HUg"/>
-                                        </constraints>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2U-Z2-xaI">
-                                        <rect key="frame" x="0.0" y="396" width="133" height="30"/>
+                                        <rect key="frame" x="111" y="534" width="133" height="29"/>
                                         <state key="normal" title="Add a new member"/>
                                         <connections>
                                             <action selector="addMember:" destination="O5A-eZ-DU1" eventType="touchUpInside" id="00r-tf-rqF"/>
@@ -274,28 +271,29 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Df5-1v-i4v" firstAttribute="width" secondItem="pvl-Wf-SH3" secondAttribute="width" id="gDB-yb-8Lg"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lIg-dJ-xnC" firstAttribute="top" secondItem="pvl-Wf-SH3" secondAttribute="bottom" constant="126" id="rc5-Ry-694"/>
-                            <constraint firstItem="pvl-Wf-SH3" firstAttribute="leading" secondItem="e5P-bK-FiS" secondAttribute="leadingMargin" constant="14" id="xuu-Lu-Os1"/>
+                            <constraint firstItem="pvl-Wf-SH3" firstAttribute="leading" secondItem="e5P-bK-FiS" secondAttribute="leading" constant="10" id="0SA-xd-XYM"/>
+                            <constraint firstItem="pvl-Wf-SH3" firstAttribute="top" secondItem="bnc-t5-7lT" secondAttribute="bottom" constant="20" id="5Xy-6D-sB9"/>
+                            <constraint firstAttribute="trailing" secondItem="pvl-Wf-SH3" secondAttribute="trailing" constant="10" id="hOx-6b-jBj"/>
+                            <constraint firstAttribute="bottom" secondItem="pvl-Wf-SH3" secondAttribute="bottom" constant="20" id="o70-8e-cG2"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="New Group" id="a0S-bU-iPE">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wXJ-te-Qmh"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="8d5-gR-aeB">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="akY-3Z-dBb">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="addGroup:" destination="O5A-eZ-DU1" eventType="touchUpInside" id="yfF-cq-Uei"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wXJ-te-Qmh">
                             <connections>
-                                <action selector="createGroup:" destination="O5A-eZ-DU1" id="xsG-O0-4W6"/>
+                                <action selector="cancel:" destination="O5A-eZ-DU1" id="mSN-BY-ih3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="8d5-gR-aeB">
+                            <connections>
+                                <action selector="saveGroup:" destination="O5A-eZ-DU1" id="tHE-4J-dJj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -304,12 +302,11 @@
                         <outlet property="cancel" destination="wXJ-te-Qmh" id="Kne-zZ-wXN"/>
                         <outlet property="groupName" destination="Df5-1v-i4v" id="WJI-7q-fMO"/>
                         <outlet property="membersList" destination="dHh-Qc-WPa" id="DPL-fN-3NQ"/>
-                        <outlet property="saveGroup" destination="akY-3Z-dBb" id="GXg-tr-pPi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSv-ZT-nvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6996" y="-1240"/>
+            <point key="canvasLocation" x="6054" y="-682"/>
         </scene>
         <!--Debts-->
         <scene sceneID="Xe4-Jg-jQs">

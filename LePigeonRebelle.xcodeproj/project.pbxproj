@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A8F200136FD007A5108 /* WelcomeViewController.swift */; };
 		8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */; };
 		8822C4CE1FFAC8A900EF325E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4CD1FFAC8A900EF325E /* ViewController.swift */; };
 		8822C4D11FFAC8A900EF325E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8822C4CF1FFAC8A900EF325E /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		429B9A8F200136FD007A5108 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8822C4C81FFAC8A900EF325E /* LePigeonRebelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LePigeonRebelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8822C4CD1FFAC8A900EF325E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				884044F7200005BA00D55FB4 /* DataBaseController.swift */,
 				8822C4CD1FFAC8A900EF325E /* ViewController.swift */,
 				8822C4CF1FFAC8A900EF325E /* Main.storyboard */,
+				429B9A8F200136FD007A5108 /* WelcomeViewController.swift */,
 				884044F52000022200D55FB4 /* NewGroupViewController.swift */,
 				8822C4D51FFAC8A900EF325E /* Assets.xcassets */,
 				8822C4D71FFAC8A900EF325E /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 				885C868D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift in Sources */,
 				885C868220012A2300B62387 /* GroupType+CoreDataClass.swift in Sources */,
 				8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */,
+				429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */,
 				885C868320012A2300B62387 /* GroupType+CoreDataProperties.swift in Sources */,
 				885C868E20012A2300B62387 /* User+CoreDataClass.swift in Sources */,
 				885C868B20012A2300B62387 /* Debt+CoreDataProperties.swift in Sources */,

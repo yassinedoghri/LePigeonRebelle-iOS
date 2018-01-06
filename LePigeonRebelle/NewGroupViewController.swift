@@ -20,8 +20,6 @@ class NewGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        print("Bonjour")
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,7 +30,7 @@ class NewGroupViewController: UIViewController {
     @IBAction func memberAdd(_ sender: UIButton) {
     }
     
-    @IBAction func addGroup(_ sender: UIButton) {
+    @IBAction func saveGroup(_ sender: Any) {
         // create a new group in the database with the group name in the TextField
         print("Bonjour")
         let entityName:String = String(describing: Group.self)
@@ -48,12 +46,17 @@ class NewGroupViewController: UIViewController {
         do {
             let searchResults = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
             for result in searchResults as [Group] {
-                print("\(result.name)")
+                print("\(String(describing: result.name))")
             }
         }
         catch {
             print("Error: \(error)")
         }
+
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
 }
