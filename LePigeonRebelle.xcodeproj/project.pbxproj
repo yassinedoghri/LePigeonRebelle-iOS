@@ -13,6 +13,26 @@
 		8822C4D41FFAC8A900EF325E /* LePigeonRebelle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4D21FFAC8A900EF325E /* LePigeonRebelle.xcdatamodeld */; };
 		8822C4D61FFAC8A900EF325E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8822C4D51FFAC8A900EF325E /* Assets.xcassets */; };
 		8822C4D91FFAC8A900EF325E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8822C4D71FFAC8A900EF325E /* LaunchScreen.storyboard */; };
+		883F7D791FFFFAA900F62BF6 /* ExpenseCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D671FFFFAA900F62BF6 /* ExpenseCategory+CoreDataClass.swift */; };
+		883F7D7A1FFFFAA900F62BF6 /* ExpenseCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D681FFFFAA900F62BF6 /* ExpenseCategory+CoreDataProperties.swift */; };
+		883F7D7B1FFFFAA900F62BF6 /* User_Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D691FFFFAA900F62BF6 /* User_Expense+CoreDataClass.swift */; };
+		883F7D7C1FFFFAA900F62BF6 /* User_Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D6A1FFFFAA900F62BF6 /* User_Expense+CoreDataProperties.swift */; };
+		883F7D7D1FFFFAA900F62BF6 /* DefaultUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D6B1FFFFAA900F62BF6 /* DefaultUser+CoreDataClass.swift */; };
+		883F7D7E1FFFFAA900F62BF6 /* DefaultUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D6C1FFFFAA900F62BF6 /* DefaultUser+CoreDataProperties.swift */; };
+		883F7D7F1FFFFAA900F62BF6 /* ExpenseType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D6D1FFFFAA900F62BF6 /* ExpenseType+CoreDataClass.swift */; };
+		883F7D801FFFFAA900F62BF6 /* ExpenseType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D6E1FFFFAA900F62BF6 /* ExpenseType+CoreDataProperties.swift */; };
+		883F7D811FFFFAA900F62BF6 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D6F1FFFFAA900F62BF6 /* Expense+CoreDataClass.swift */; };
+		883F7D821FFFFAA900F62BF6 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D701FFFFAA900F62BF6 /* Expense+CoreDataProperties.swift */; };
+		883F7D831FFFFAA900F62BF6 /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D711FFFFAA900F62BF6 /* Group+CoreDataClass.swift */; };
+		883F7D841FFFFAA900F62BF6 /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D721FFFFAA900F62BF6 /* Group+CoreDataProperties.swift */; };
+		883F7D851FFFFAA900F62BF6 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D731FFFFAA900F62BF6 /* User+CoreDataClass.swift */; };
+		883F7D861FFFFAA900F62BF6 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D741FFFFAA900F62BF6 /* User+CoreDataProperties.swift */; };
+		883F7D871FFFFAA900F62BF6 /* GroupType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D751FFFFAA900F62BF6 /* GroupType+CoreDataClass.swift */; };
+		883F7D881FFFFAA900F62BF6 /* GroupType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D761FFFFAA900F62BF6 /* GroupType+CoreDataProperties.swift */; };
+		883F7D891FFFFAA900F62BF6 /* User_Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D771FFFFAA900F62BF6 /* User_Group+CoreDataClass.swift */; };
+		883F7D8A1FFFFAA900F62BF6 /* User_Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F7D781FFFFAA900F62BF6 /* User_Group+CoreDataProperties.swift */; };
+		884044F62000022200D55FB4 /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884044F52000022200D55FB4 /* NewGroupViewController.swift */; };
+		884044F8200005BA00D55FB4 /* DataBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884044F7200005BA00D55FB4 /* DataBaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +44,26 @@
 		8822C4D51FFAC8A900EF325E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8822C4D81FFAC8A900EF325E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8822C4DA1FFAC8A900EF325E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883F7D671FFFFAA900F62BF6 /* ExpenseCategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D681FFFFAA900F62BF6 /* ExpenseCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		883F7D691FFFFAA900F62BF6 /* User_Expense+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User_Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D6A1FFFFAA900F62BF6 /* User_Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User_Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		883F7D6B1FFFFAA900F62BF6 /* DefaultUser+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DefaultUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D6C1FFFFAA900F62BF6 /* DefaultUser+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DefaultUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		883F7D6D1FFFFAA900F62BF6 /* ExpenseType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D6E1FFFFAA900F62BF6 /* ExpenseType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		883F7D6F1FFFFAA900F62BF6 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D701FFFFAA900F62BF6 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		883F7D711FFFFAA900F62BF6 /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D721FFFFAA900F62BF6 /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		883F7D731FFFFAA900F62BF6 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D741FFFFAA900F62BF6 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		883F7D751FFFFAA900F62BF6 /* GroupType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroupType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D761FFFFAA900F62BF6 /* GroupType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroupType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		883F7D771FFFFAA900F62BF6 /* User_Group+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User_Group+CoreDataClass.swift"; sourceTree = "<group>"; };
+		883F7D781FFFFAA900F62BF6 /* User_Group+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User_Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		884044F52000022200D55FB4 /* NewGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
+		884044F7200005BA00D55FB4 /* DataBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +96,43 @@
 		8822C4CA1FFAC8A900EF325E /* LePigeonRebelle */ = {
 			isa = PBXGroup;
 			children = (
+				883F7D8B1FFFFAEB00F62BF6 /* Models */,
 				8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */,
+				884044F7200005BA00D55FB4 /* DataBaseController.swift */,
 				8822C4CD1FFAC8A900EF325E /* ViewController.swift */,
 				8822C4CF1FFAC8A900EF325E /* Main.storyboard */,
+				884044F52000022200D55FB4 /* NewGroupViewController.swift */,
 				8822C4D51FFAC8A900EF325E /* Assets.xcassets */,
 				8822C4D71FFAC8A900EF325E /* LaunchScreen.storyboard */,
 				8822C4DA1FFAC8A900EF325E /* Info.plist */,
 				8822C4D21FFAC8A900EF325E /* LePigeonRebelle.xcdatamodeld */,
 			);
 			path = LePigeonRebelle;
+			sourceTree = "<group>";
+		};
+		883F7D8B1FFFFAEB00F62BF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				883F7D6C1FFFFAA900F62BF6 /* DefaultUser+CoreDataProperties.swift */,
+				883F7D6D1FFFFAA900F62BF6 /* ExpenseType+CoreDataClass.swift */,
+				883F7D701FFFFAA900F62BF6 /* Expense+CoreDataProperties.swift */,
+				883F7D671FFFFAA900F62BF6 /* ExpenseCategory+CoreDataClass.swift */,
+				883F7D681FFFFAA900F62BF6 /* ExpenseCategory+CoreDataProperties.swift */,
+				883F7D691FFFFAA900F62BF6 /* User_Expense+CoreDataClass.swift */,
+				883F7D6A1FFFFAA900F62BF6 /* User_Expense+CoreDataProperties.swift */,
+				883F7D6B1FFFFAA900F62BF6 /* DefaultUser+CoreDataClass.swift */,
+				883F7D6E1FFFFAA900F62BF6 /* ExpenseType+CoreDataProperties.swift */,
+				883F7D6F1FFFFAA900F62BF6 /* Expense+CoreDataClass.swift */,
+				883F7D711FFFFAA900F62BF6 /* Group+CoreDataClass.swift */,
+				883F7D721FFFFAA900F62BF6 /* Group+CoreDataProperties.swift */,
+				883F7D731FFFFAA900F62BF6 /* User+CoreDataClass.swift */,
+				883F7D741FFFFAA900F62BF6 /* User+CoreDataProperties.swift */,
+				883F7D751FFFFAA900F62BF6 /* GroupType+CoreDataClass.swift */,
+				883F7D761FFFFAA900F62BF6 /* GroupType+CoreDataProperties.swift */,
+				883F7D771FFFFAA900F62BF6 /* User_Group+CoreDataClass.swift */,
+				883F7D781FFFFAA900F62BF6 /* User_Group+CoreDataProperties.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +208,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				8822C4CE1FFAC8A900EF325E /* ViewController.swift in Sources */,
+				883F7D841FFFFAA900F62BF6 /* Group+CoreDataProperties.swift in Sources */,
+				883F7D7F1FFFFAA900F62BF6 /* ExpenseType+CoreDataClass.swift in Sources */,
+				883F7D881FFFFAA900F62BF6 /* GroupType+CoreDataProperties.swift in Sources */,
+				883F7D871FFFFAA900F62BF6 /* GroupType+CoreDataClass.swift in Sources */,
+				883F7D891FFFFAA900F62BF6 /* User_Group+CoreDataClass.swift in Sources */,
+				883F7D7C1FFFFAA900F62BF6 /* User_Expense+CoreDataProperties.swift in Sources */,
+				883F7D7B1FFFFAA900F62BF6 /* User_Expense+CoreDataClass.swift in Sources */,
+				883F7D7E1FFFFAA900F62BF6 /* DefaultUser+CoreDataProperties.swift in Sources */,
+				883F7D791FFFFAA900F62BF6 /* ExpenseCategory+CoreDataClass.swift in Sources */,
+				883F7D861FFFFAA900F62BF6 /* User+CoreDataProperties.swift in Sources */,
+				883F7D8A1FFFFAA900F62BF6 /* User_Group+CoreDataProperties.swift in Sources */,
+				884044F8200005BA00D55FB4 /* DataBaseController.swift in Sources */,
+				883F7D851FFFFAA900F62BF6 /* User+CoreDataClass.swift in Sources */,
 				8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */,
+				883F7D801FFFFAA900F62BF6 /* ExpenseType+CoreDataProperties.swift in Sources */,
+				883F7D7A1FFFFAA900F62BF6 /* ExpenseCategory+CoreDataProperties.swift in Sources */,
+				883F7D831FFFFAA900F62BF6 /* Group+CoreDataClass.swift in Sources */,
+				884044F62000022200D55FB4 /* NewGroupViewController.swift in Sources */,
+				883F7D811FFFFAA900F62BF6 /* Expense+CoreDataClass.swift in Sources */,
+				883F7D7D1FFFFAA900F62BF6 /* DefaultUser+CoreDataClass.swift in Sources */,
+				883F7D821FFFFAA900F62BF6 /* Expense+CoreDataProperties.swift in Sources */,
 				8822C4D41FFAC8A900EF325E /* LePigeonRebelle.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +391,7 @@
 				8822C4DF1FFAC8A900EF325E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
