@@ -18,7 +18,7 @@ extension Group {
 
     @NSManaged public var name: String?
     @NSManaged public var expenses: NSSet?
-    @NSManaged public var type: GroupType?
+    @NSManaged public var type: GroupType
     @NSManaged public var userGroupList: NSSet?
 
 }

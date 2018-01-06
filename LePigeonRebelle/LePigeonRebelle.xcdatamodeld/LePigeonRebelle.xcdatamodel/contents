@@ -53,13 +53,13 @@
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="userGroupList" inverseEntity="User" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Debt" positionX="-657" positionY="239" width="128" height="103"/>
         <element name="Expense" positionX="-261" positionY="279" width="128" height="148"/>
         <element name="ExpenseCategory" positionX="124" positionY="81" width="128" height="88"/>
         <element name="ExpenseType" positionX="133" positionY="269" width="128" height="73"/>
-        <element name="Group" positionX="-83" positionY="-108" width="128" height="103"/>
-        <element name="GroupType" positionX="250" positionY="-108" width="128" height="88"/>
+        <element name="Group" positionX="-83" positionY="-108" width="128" height="105"/>
+        <element name="GroupType" positionX="250" positionY="-108" width="128" height="90"/>
         <element name="User" positionX="-677" positionY="-81" width="128" height="118"/>
-        <element name="Debt" positionX="-657" positionY="239" width="128" height="103"/>
         <element name="UserGroup" positionX="-387" positionY="-108" width="128" height="88"/>
     </elements>
 </model>
