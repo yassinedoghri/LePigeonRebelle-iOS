@@ -240,29 +240,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-Wf-SH3">
-                                <rect key="frame" x="30" y="135" width="240" height="406"/>
+                                <rect key="frame" x="30" y="115" width="240" height="426"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter the group name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-1v-i4v">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="16.5"/>
-                                        <nil key="textColor"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter the group name" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-1v-i4v">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="30"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-HS-qGY">
-                                        <rect key="frame" x="0.0" y="76.5" width="72" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="90" width="72" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="247" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-Qc-WPa">
-                                        <rect key="frame" x="0.0" y="157" width="240" height="159"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="246" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-Qc-WPa">
+                                        <rect key="frame" x="0.0" y="170.5" width="240" height="165.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="AEJ-bd-HUg"/>
                                         </constraints>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2U-Z2-xaI">
-                                        <rect key="frame" x="0.0" y="376" width="133" height="30"/>
+                                        <rect key="frame" x="0.0" y="396" width="133" height="30"/>
                                         <state key="normal" title="Add a new member"/>
                                         <connections>
                                             <action selector="addMember:" destination="O5A-eZ-DU1" eventType="touchUpInside" id="00r-tf-rqF"/>
@@ -271,36 +271,44 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTz-Lb-hcG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="New Group" id="a0S-bU-iPE">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wXJ-te-Qmh"/>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="8d5-gR-aeB">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="akY-3Z-dBb">
-                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Save"/>
-                                                <connections>
-                                                    <action selector="addGroup:" destination="O5A-eZ-DU1" eventType="touchUpInside" id="yfF-cq-Uei"/>
-                                                    <segue destination="yK3-F2-H2u" kind="show" id="QCX-sU-kzD"/>
-                                                </connections>
-                                            </button>
-                                            <connections>
-                                                <action selector="createGroup:" destination="O5A-eZ-DU1" id="xsG-O0-4W6"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UX3-fa-VPH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTz-Lb-hcG">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                        <items>
+                                            <navigationItem title="New Group" id="a0S-bU-iPE">
+                                                <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wXJ-te-Qmh"/>
+                                                <barButtonItem key="rightBarButtonItem" style="plain" id="8d5-gR-aeB">
+                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="akY-3Z-dBb">
+                                                        <rect key="frame" x="276" y="33" width="83" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Save"/>
+                                                        <connections>
+                                                            <action selector="addGroup:" destination="O5A-eZ-DU1" eventType="touchUpInside" id="yfF-cq-Uei"/>
+                                                            <segue destination="yK3-F2-H2u" kind="show" id="QCX-sU-kzD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <connections>
+                                                        <action selector="createGroup:" destination="O5A-eZ-DU1" id="xsG-O0-4W6"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ihG-BF-zAT"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pvl-Wf-SH3" firstAttribute="top" secondItem="NTz-Lb-hcG" secondAttribute="bottom" constant="91" id="DL6-Zu-Ilk"/>
-                            <constraint firstAttribute="trailing" secondItem="NTz-Lb-hcG" secondAttribute="trailing" id="SJe-vM-ODL"/>
-                            <constraint firstItem="NTz-Lb-hcG" firstAttribute="top" secondItem="e5P-bK-FiS" secondAttribute="top" id="ScA-Wv-lh4"/>
-                            <constraint firstItem="NTz-Lb-hcG" firstAttribute="leading" secondItem="e5P-bK-FiS" secondAttribute="leading" id="nVq-ht-bCt"/>
+                            <constraint firstAttribute="trailing" secondItem="UX3-fa-VPH" secondAttribute="trailing" id="BFs-es-MFu"/>
+                            <constraint firstItem="UX3-fa-VPH" firstAttribute="leading" secondItem="e5P-bK-FiS" secondAttribute="leading" id="aom-Ai-VIE"/>
+                            <constraint firstItem="pvl-Wf-SH3" firstAttribute="top" secondItem="UX3-fa-VPH" secondAttribute="bottom" constant="45" id="rZt-qS-Wf9"/>
                             <constraint firstItem="lIg-dJ-xnC" firstAttribute="top" secondItem="pvl-Wf-SH3" secondAttribute="bottom" constant="126" id="rc5-Ry-694"/>
+                            <constraint firstItem="UX3-fa-VPH" firstAttribute="top" secondItem="e5P-bK-FiS" secondAttribute="top" id="x9X-HM-LL6"/>
                             <constraint firstItem="pvl-Wf-SH3" firstAttribute="leading" secondItem="e5P-bK-FiS" secondAttribute="leadingMargin" constant="14" id="xuu-Lu-Os1"/>
                         </constraints>
                     </view>
@@ -314,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSv-ZT-nvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6894" y="-1090"/>
+            <point key="canvasLocation" x="6996" y="-1240"/>
         </scene>
         <!--Debts-->
         <scene sceneID="Xe4-Jg-jQs">
