@@ -36,10 +36,10 @@ class NewGroupViewController: UIViewController {
         // create a new group in the database with the group name in the TextField
         print("Bonjour")
         let entityName:String = String(describing: Group.self)
-        let groupe_name:String = groupName.text!
+        let group_name:String = groupName.text!
         
         let group:Group = NSEntityDescription.insertNewObject(forEntityName: entityName, into: DataBaseController.persistentContainer.viewContext) as! Group
-        group.name = groupe_name
+        group.name = group_name
         
         DataBaseController.saveContext()
         
@@ -54,7 +54,6 @@ class NewGroupViewController: UIViewController {
         catch {
             print("Error: \(error)")
         }
-        
     }
     
 }

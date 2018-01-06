@@ -12,8 +12,8 @@
         <attribute name="desc" attributeType="String" syncable="YES"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseCategory" inverseName="expenses" inverseEntity="ExpenseCategory" syncable="YES"/>
         <relationship name="debts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Debt" inverseName="expense" inverseEntity="Debt" syncable="YES"/>
-        <relationship name="group" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="expenses" inverseEntity="Group" syncable="YES"/>
-        <relationship name="type" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseType" inverseName="expenses" inverseEntity="ExpenseType" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="expenses" inverseEntity="Group" syncable="YES"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseType" inverseName="expenses" inverseEntity="ExpenseType" syncable="YES"/>
     </entity>
     <entity name="ExpenseCategory" representedClassName="ExpenseCategory" syncable="YES">
         <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
@@ -60,6 +60,6 @@
         <element name="GroupType" positionX="250" positionY="-108" width="128" height="88"/>
         <element name="User" positionX="-677" positionY="-81" width="128" height="118"/>
         <element name="Debt" positionX="-657" positionY="239" width="128" height="103"/>
-        <element name="UserGroup" positionX="-387" positionY="-108" width="128" height="90"/>
+        <element name="UserGroup" positionX="-387" positionY="-108" width="128" height="88"/>
     </elements>
 </model>
