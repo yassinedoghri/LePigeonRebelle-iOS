@@ -625,7 +625,11 @@
                                 <action selector="cancelNewExpense:" destination="XcS-Tq-6vk" id="MUJ-BF-D5p"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="aYf-vA-IM8"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="aYf-vA-IM8">
+                            <connections>
+                                <action selector="saveExpense:" destination="XcS-Tq-6vk" id="7el-VH-rTp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
