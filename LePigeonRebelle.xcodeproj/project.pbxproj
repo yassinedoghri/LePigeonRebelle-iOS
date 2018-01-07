@@ -32,6 +32,8 @@
 		885C868D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift */; };
 		885C868E20012A2300B62387 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867E20012A2300B62387 /* User+CoreDataClass.swift */; };
 		885C868F20012A2300B62387 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867F20012A2300B62387 /* User+CoreDataProperties.swift */; };
+		885C86912001955B00B62387 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C86902001955B00B62387 /* GroupsViewController.swift */; };
+		885C86932001971400B62387 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C86922001971400B62387 /* GroupTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		885C867D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		885C867E20012A2300B62387 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		885C867F20012A2300B62387 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		885C86902001955B00B62387 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		885C86922001971400B62387 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				884044F7200005BA00D55FB4 /* DataBaseController.swift */,
 				8822C4CD1FFAC8A900EF325E /* ViewController.swift */,
 				8822C4CF1FFAC8A900EF325E /* Main.storyboard */,
+				885C86922001971400B62387 /* GroupTableViewCell.swift */,
+				885C86902001955B00B62387 /* GroupsViewController.swift */,
 				429B9A8F200136FD007A5108 /* WelcomeViewController.swift */,
 				884044F52000022200D55FB4 /* NewGroupViewController.swift */,
 				8822C4D51FFAC8A900EF325E /* Assets.xcassets */,
@@ -207,6 +213,7 @@
 				885C868020012A2300B62387 /* UserGroup+CoreDataClass.swift in Sources */,
 				885C868720012A2300B62387 /* Group+CoreDataProperties.swift in Sources */,
 				885C868920012A2300B62387 /* ExpenseType+CoreDataProperties.swift in Sources */,
+				885C86932001971400B62387 /* GroupTableViewCell.swift in Sources */,
 				885C868620012A2300B62387 /* Group+CoreDataClass.swift in Sources */,
 				8822C4CE1FFAC8A900EF325E /* ViewController.swift in Sources */,
 				885C868820012A2300B62387 /* ExpenseType+CoreDataClass.swift in Sources */,
@@ -220,6 +227,7 @@
 				429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */,
 				885C868320012A2300B62387 /* GroupType+CoreDataProperties.swift in Sources */,
 				885C868E20012A2300B62387 /* User+CoreDataClass.swift in Sources */,
+				885C86912001955B00B62387 /* GroupsViewController.swift in Sources */,
 				885C868B20012A2300B62387 /* Debt+CoreDataProperties.swift in Sources */,
 				885C868520012A2300B62387 /* Expense+CoreDataProperties.swift in Sources */,
 				885C868F20012A2300B62387 /* User+CoreDataProperties.swift in Sources */,
