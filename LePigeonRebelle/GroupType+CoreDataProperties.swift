@@ -18,7 +18,7 @@ extension GroupType {
 
     @NSManaged public var icon: String?
     @NSManaged public var wording: String?
-    @NSManaged public var groups: NSSet?
+    @NSManaged public var groups: NSSet
 
 }
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		158C64C5200799F1002E791D /* GroupExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64C4200799F1002E791D /* GroupExpensesViewController.swift */; };
+		158C64C92007C05D002E791D /* GroupDebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64C82007C05D002E791D /* GroupDebtsViewController.swift */; };
+		158C64CB2007C7AF002E791D /* GroupTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64CA2007C7AF002E791D /* GroupTabBarController.swift */; };
+		15B0FA3A2006CAAA0061CA6F /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */; };
+		15B0FA3C2006CAE20061CA6F /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FA3B2006CAE20061CA6F /* GroupTableViewController.swift */; };
 		429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A8F200136FD007A5108 /* WelcomeViewController.swift */; };
 		429B9A9220015453007A5108 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A9120015453007A5108 /* NewExpenseViewController.swift */; };
 		8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		158C64C4200799F1002E791D /* GroupExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupExpensesViewController.swift; path = ../GroupExpensesViewController.swift; sourceTree = "<group>"; };
+		158C64C82007C05D002E791D /* GroupDebtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDebtsViewController.swift; sourceTree = "<group>"; };
+		158C64CA2007C7AF002E791D /* GroupTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTabBarController.swift; sourceTree = "<group>"; };
+		15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		15B0FA3B2006CAE20061CA6F /* GroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
 		429B9A8F200136FD007A5108 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		429B9A9120015453007A5108 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
 		8822C4C81FFAC8A900EF325E /* LePigeonRebelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LePigeonRebelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +113,11 @@
 				8822C4CF1FFAC8A900EF325E /* Main.storyboard */,
 				429B9A8F200136FD007A5108 /* WelcomeViewController.swift */,
 				884044F52000022200D55FB4 /* NewGroupViewController.swift */,
+				158C64C4200799F1002E791D /* GroupExpensesViewController.swift */,
+				15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */,
+				158C64CA2007C7AF002E791D /* GroupTabBarController.swift */,
+				158C64C82007C05D002E791D /* GroupDebtsViewController.swift */,
+				15B0FA3B2006CAE20061CA6F /* GroupTableViewController.swift */,
 				429B9A9120015453007A5108 /* NewExpenseViewController.swift */,
 				8822C4D51FFAC8A900EF325E /* Assets.xcassets */,
 				8822C4D71FFAC8A900EF325E /* LaunchScreen.storyboard */,
@@ -213,6 +228,7 @@
 				885C868620012A2300B62387 /* Group+CoreDataClass.swift in Sources */,
 				8822C4CE1FFAC8A900EF325E /* ViewController.swift in Sources */,
 				885C868820012A2300B62387 /* ExpenseType+CoreDataClass.swift in Sources */,
+				15B0FA3C2006CAE20061CA6F /* GroupTableViewController.swift in Sources */,
 				429B9A9220015453007A5108 /* NewExpenseViewController.swift in Sources */,
 				885C868C20012A2300B62387 /* ExpenseCategory+CoreDataClass.swift in Sources */,
 				885C868A20012A2300B62387 /* Debt+CoreDataClass.swift in Sources */,
@@ -225,8 +241,12 @@
 				885C868320012A2300B62387 /* GroupType+CoreDataProperties.swift in Sources */,
 				885C868E20012A2300B62387 /* User+CoreDataClass.swift in Sources */,
 				885C868B20012A2300B62387 /* Debt+CoreDataProperties.swift in Sources */,
+				158C64C92007C05D002E791D /* GroupDebtsViewController.swift in Sources */,
 				885C868520012A2300B62387 /* Expense+CoreDataProperties.swift in Sources */,
 				885C868F20012A2300B62387 /* User+CoreDataProperties.swift in Sources */,
+				158C64C5200799F1002E791D /* GroupExpensesViewController.swift in Sources */,
+				15B0FA3A2006CAAA0061CA6F /* GroupsViewController.swift in Sources */,
+				158C64CB2007C7AF002E791D /* GroupTabBarController.swift in Sources */,
 				884044F62000022200D55FB4 /* NewGroupViewController.swift in Sources */,
 				885C868120012A2300B62387 /* UserGroup+CoreDataProperties.swift in Sources */,
 				8822C4D41FFAC8A900EF325E /* LePigeonRebelle.xcdatamodeld in Sources */,
