@@ -2,7 +2,7 @@
 //  Group+CoreDataProperties.swift
 //  LePigeonRebelle
 //
-//  Created by iMac on 06/01/2018.
+//  Created by walidebisi on 12/01/2018.
 //  Copyright © 2018 Le Pigeon Rebelle. All rights reserved.
 //
 
@@ -13,10 +13,11 @@ import CoreData
 extension Group {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Group> {
-        return NSFetchRequest<Group>(entityName: "Group");
+        return NSFetchRequest<Group>(entityName: "Group")
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var budget: NSDecimalNumber?
     @NSManaged public var expenses: NSSet?
     @NSManaged public var type: GroupType
     @NSManaged public var userGroupList: NSSet?

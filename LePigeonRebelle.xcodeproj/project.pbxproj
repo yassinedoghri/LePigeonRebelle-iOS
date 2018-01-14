@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153DC31A2008F2AE00E7D0EB /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC3182008F2AE00E7D0EB /* Group+CoreDataClass.swift */; };
+		153DC31B2008F2AE00E7D0EB /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC3192008F2AE00E7D0EB /* Group+CoreDataProperties.swift */; };
+		153DC31D200927A300E7D0EB /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC31C200927A300E7D0EB /* ExpenseTableViewCell.swift */; };
+		153DC31F2009308800E7D0EB /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */; };
+		153DC321200B8F4900E7D0EB /* DebtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */; };
+		153DC323200C02C600E7D0EB /* DebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC322200C02C600E7D0EB /* DebtsViewController.swift */; };
 		158C64C5200799F1002E791D /* GroupExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64C4200799F1002E791D /* GroupExpensesViewController.swift */; };
 		158C64C92007C05D002E791D /* GroupDebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64C82007C05D002E791D /* GroupDebtsViewController.swift */; };
 		158C64CB2007C7AF002E791D /* GroupTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64CA2007C7AF002E791D /* GroupTabBarController.swift */; };
 		15B0FA3A2006CAAA0061CA6F /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */; };
-		15B0FA3C2006CAE20061CA6F /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FA3B2006CAE20061CA6F /* GroupTableViewController.swift */; };
+		15B0FA3C2006CAE20061CA6F /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FA3B2006CAE20061CA6F /* GroupTableViewCell.swift */; };
 		429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A8F200136FD007A5108 /* WelcomeViewController.swift */; };
 		429B9A9220015453007A5108 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A9120015453007A5108 /* NewExpenseViewController.swift */; };
 		8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */; };
@@ -28,8 +34,6 @@
 		885C868320012A2300B62387 /* GroupType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867320012A2300B62387 /* GroupType+CoreDataProperties.swift */; };
 		885C868420012A2300B62387 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867420012A2300B62387 /* Expense+CoreDataClass.swift */; };
 		885C868520012A2300B62387 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867520012A2300B62387 /* Expense+CoreDataProperties.swift */; };
-		885C868620012A2300B62387 /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867620012A2300B62387 /* Group+CoreDataClass.swift */; };
-		885C868720012A2300B62387 /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867720012A2300B62387 /* Group+CoreDataProperties.swift */; };
 		885C868820012A2300B62387 /* ExpenseType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867820012A2300B62387 /* ExpenseType+CoreDataClass.swift */; };
 		885C868920012A2300B62387 /* ExpenseType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867920012A2300B62387 /* ExpenseType+CoreDataProperties.swift */; };
 		885C868A20012A2300B62387 /* Debt+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867A20012A2300B62387 /* Debt+CoreDataClass.swift */; };
@@ -41,11 +45,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153DC3182008F2AE00E7D0EB /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Group+CoreDataClass.swift"; path = "../Group+CoreDataClass.swift"; sourceTree = "<group>"; };
+		153DC3192008F2AE00E7D0EB /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Group+CoreDataProperties.swift"; path = "../Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		153DC31C200927A300E7D0EB /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtTableViewCell.swift; sourceTree = "<group>"; };
+		153DC322200C02C600E7D0EB /* DebtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsViewController.swift; sourceTree = "<group>"; };
 		158C64C4200799F1002E791D /* GroupExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupExpensesViewController.swift; path = ../GroupExpensesViewController.swift; sourceTree = "<group>"; };
 		158C64C82007C05D002E791D /* GroupDebtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDebtsViewController.swift; sourceTree = "<group>"; };
 		158C64CA2007C7AF002E791D /* GroupTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTabBarController.swift; sourceTree = "<group>"; };
 		15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
-		15B0FA3B2006CAE20061CA6F /* GroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
+		15B0FA3B2006CAE20061CA6F /* GroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		429B9A8F200136FD007A5108 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		429B9A9120015453007A5108 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
 		8822C4C81FFAC8A900EF325E /* LePigeonRebelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LePigeonRebelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +74,6 @@
 		885C867320012A2300B62387 /* GroupType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroupType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		885C867420012A2300B62387 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
 		885C867520012A2300B62387 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		885C867620012A2300B62387 /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataClass.swift"; sourceTree = "<group>"; };
-		885C867720012A2300B62387 /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		885C867820012A2300B62387 /* ExpenseType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		885C867920012A2300B62387 /* ExpenseType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		885C867A20012A2300B62387 /* Debt+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Debt+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -111,13 +119,17 @@
 				884044F7200005BA00D55FB4 /* DataBaseController.swift */,
 				8822C4CD1FFAC8A900EF325E /* ViewController.swift */,
 				8822C4CF1FFAC8A900EF325E /* Main.storyboard */,
+				153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */,
+				153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */,
+				153DC31C200927A300E7D0EB /* ExpenseTableViewCell.swift */,
 				429B9A8F200136FD007A5108 /* WelcomeViewController.swift */,
 				884044F52000022200D55FB4 /* NewGroupViewController.swift */,
 				158C64C4200799F1002E791D /* GroupExpensesViewController.swift */,
 				15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */,
+				153DC322200C02C600E7D0EB /* DebtsViewController.swift */,
 				158C64CA2007C7AF002E791D /* GroupTabBarController.swift */,
 				158C64C82007C05D002E791D /* GroupDebtsViewController.swift */,
-				15B0FA3B2006CAE20061CA6F /* GroupTableViewController.swift */,
+				15B0FA3B2006CAE20061CA6F /* GroupTableViewCell.swift */,
 				429B9A9120015453007A5108 /* NewExpenseViewController.swift */,
 				8822C4D51FFAC8A900EF325E /* Assets.xcassets */,
 				8822C4D71FFAC8A900EF325E /* LaunchScreen.storyboard */,
@@ -130,14 +142,14 @@
 		883F7D8B1FFFFAEB00F62BF6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				153DC3182008F2AE00E7D0EB /* Group+CoreDataClass.swift */,
+				153DC3192008F2AE00E7D0EB /* Group+CoreDataProperties.swift */,
 				885C867020012A2300B62387 /* UserGroup+CoreDataClass.swift */,
 				885C867120012A2300B62387 /* UserGroup+CoreDataProperties.swift */,
 				885C867220012A2300B62387 /* GroupType+CoreDataClass.swift */,
 				885C867320012A2300B62387 /* GroupType+CoreDataProperties.swift */,
 				885C867420012A2300B62387 /* Expense+CoreDataClass.swift */,
 				885C867520012A2300B62387 /* Expense+CoreDataProperties.swift */,
-				885C867620012A2300B62387 /* Group+CoreDataClass.swift */,
-				885C867720012A2300B62387 /* Group+CoreDataProperties.swift */,
 				885C867820012A2300B62387 /* ExpenseType+CoreDataClass.swift */,
 				885C867920012A2300B62387 /* ExpenseType+CoreDataProperties.swift */,
 				885C867A20012A2300B62387 /* Debt+CoreDataClass.swift */,
@@ -223,12 +235,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				885C868020012A2300B62387 /* UserGroup+CoreDataClass.swift in Sources */,
-				885C868720012A2300B62387 /* Group+CoreDataProperties.swift in Sources */,
 				885C868920012A2300B62387 /* ExpenseType+CoreDataProperties.swift in Sources */,
-				885C868620012A2300B62387 /* Group+CoreDataClass.swift in Sources */,
 				8822C4CE1FFAC8A900EF325E /* ViewController.swift in Sources */,
 				885C868820012A2300B62387 /* ExpenseType+CoreDataClass.swift in Sources */,
-				15B0FA3C2006CAE20061CA6F /* GroupTableViewController.swift in Sources */,
+				15B0FA3C2006CAE20061CA6F /* GroupTableViewCell.swift in Sources */,
+				153DC323200C02C600E7D0EB /* DebtsViewController.swift in Sources */,
+				153DC31B2008F2AE00E7D0EB /* Group+CoreDataProperties.swift in Sources */,
 				429B9A9220015453007A5108 /* NewExpenseViewController.swift in Sources */,
 				885C868C20012A2300B62387 /* ExpenseCategory+CoreDataClass.swift in Sources */,
 				885C868A20012A2300B62387 /* Debt+CoreDataClass.swift in Sources */,
@@ -236,16 +248,20 @@
 				884044F8200005BA00D55FB4 /* DataBaseController.swift in Sources */,
 				885C868D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift in Sources */,
 				885C868220012A2300B62387 /* GroupType+CoreDataClass.swift in Sources */,
+				153DC31A2008F2AE00E7D0EB /* Group+CoreDataClass.swift in Sources */,
 				8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */,
 				429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */,
 				885C868320012A2300B62387 /* GroupType+CoreDataProperties.swift in Sources */,
 				885C868E20012A2300B62387 /* User+CoreDataClass.swift in Sources */,
 				885C868B20012A2300B62387 /* Debt+CoreDataProperties.swift in Sources */,
 				158C64C92007C05D002E791D /* GroupDebtsViewController.swift in Sources */,
+				153DC321200B8F4900E7D0EB /* DebtTableViewCell.swift in Sources */,
+				153DC31D200927A300E7D0EB /* ExpenseTableViewCell.swift in Sources */,
 				885C868520012A2300B62387 /* Expense+CoreDataProperties.swift in Sources */,
 				885C868F20012A2300B62387 /* User+CoreDataProperties.swift in Sources */,
 				158C64C5200799F1002E791D /* GroupExpensesViewController.swift in Sources */,
 				15B0FA3A2006CAAA0061CA6F /* GroupsViewController.swift in Sources */,
+				153DC31F2009308800E7D0EB /* MemberTableViewCell.swift in Sources */,
 				158C64CB2007C7AF002E791D /* GroupTabBarController.swift in Sources */,
 				884044F62000022200D55FB4 /* NewGroupViewController.swift in Sources */,
 				885C868120012A2300B62387 /* UserGroup+CoreDataProperties.swift in Sources */,

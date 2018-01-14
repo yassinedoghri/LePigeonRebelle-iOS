@@ -24,8 +24,10 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
     let datePicker = UIDatePicker()
     
     var types: [ExpenseType] = []
+    var groups: [Group] = []
     
     let categoryPickerView = UIPickerView()
+    let groupPickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,11 +51,17 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         self.createDatePicker()
         
         self.loadTypes()
+        self.loadGroups()
         
         categoryPickerView.delegate = self
         categoryPickerView.dataSource = self
         
         expenseTypeField.inputView = categoryPickerView
+        
+        groupPickerView.delegate = self
+        groupPickerView.dataSource = self
+        
+        groupField.inputView = groupPickerView
     }
     
     func dismissKeyboard() {
@@ -82,19 +90,54 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
 
     }
     
+    func loadGroups() {
+        let fetchRequest:NSFetchRequest<Group> = Group.fetchRequest()
+        
+        do {
+            groups = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
+        } catch {
+            print("Error: \(error)")
+        }
+        
+    }
+    
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return types.count
+        var numberOfRows: Int = 0
+        
+        if (pickerView == groupPickerView) {
+            numberOfRows = groups.count
+        }
+        if (pickerView == categoryPickerView) {
+            numberOfRows = types.count
+        }
+        return numberOfRows
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return types[row].wording
+        var title: String = ""
+        
+        if (pickerView == groupPickerView) {
+            title = groups[row].name!
+        }
+        if (pickerView == categoryPickerView) {
+            title = types[row].wording!
+        }
+        return title
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        expenseTypeField.text = types[row].wording
-        expenseTypeField.resignFirstResponder()
+        if (pickerView == categoryPickerView) {
+            expenseTypeField.text = types[row].wording
+            expenseTypeField.resignFirstResponder()
+        }
+        if (pickerView == groupPickerView) {
+            groupField.text = groups[row].name!
+            groupField.resignFirstResponder()
+        }
     }
     
     func createDatePicker() {
@@ -140,27 +183,38 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         dateFormatter.timeStyle = .none
         let date = dateFormatter.date(from: dateString)
         
+        let formatter = NumberFormatter()
+        formatter.generatesDecimalNumbers = true
+        let amount = formatter.number(from: amountField.text!)
+        let debt:Debt = NSEntityDescription.insertNewObject(forEntityName: "Debt", into: DataBaseController.persistentContainer.viewContext) as! Debt
+        debt.amount = amount as! NSDecimalNumber
+        
         let expense:Expense = NSEntityDescription.insertNewObject(forEntityName: entityName, into: DataBaseController.persistentContainer.viewContext) as! Expense
         expense.desc = description
         expense.date = date! as NSDate
         expense.comment = comment
+        expense.addToDebts(debt)
+        
+        if let group = groups.first(where: { $0.name == self.groupField.text! }) {
+            expense.group = group
+        }
         if let type = types.first(where: { $0.wording == self.expenseTypeField.text! }) {
             expense.type = type
         }
         
         DataBaseController.saveContext()
         
-        let fetchRequest:NSFetchRequest<Expense> = Expense.fetchRequest()
-        
-        do {
-            let searchResults = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
-            for result in searchResults as [Expense] {
-                print("\(String(describing: result.description))")
-            }
-        }
-        catch {
-            print("Error: \(error)")
-        }
+//        let fetchRequest:NSFetchRequest<Expense> = Expense.fetchRequest()
+//        
+//        do {
+//            let searchResults = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
+//            for result in searchResults as [Expense] {
+//                print("\(String(describing: result.description))")
+//            }
+//        }
+//        catch {
+//            print("Error: \(error)")
+//        }
         self.navigationController?.popViewController(animated: true)
     }
     

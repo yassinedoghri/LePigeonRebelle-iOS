@@ -38,6 +38,11 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         
         let group = groups[indexPath.row]
         cell.groupName?.text = group.name!
+        if (group.budget != 0){
+            cell.budget.text = String(describing: group.budget!) + "€"
+        } else {
+            cell.budget.text = "No budget!"
+        }
         
         return cell
     }
@@ -47,7 +52,9 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         let group = groups[indexPath.row]
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let tabBarController = storyboard.instantiateViewController(withIdentifier: "GroupTabVC") as! UITabBarController
+        let tabBarController = storyboard.instantiateViewController(withIdentifier: "GroupTabVC") as! GroupTabBarController
+        
+        tabBarController.groupSelected.title = group.name
         
         if let viewControllers = tabBarController.viewControllers,
             let groupExpensesController = viewControllers.first as? GroupExpensesViewController {

@@ -9,8 +9,10 @@
 import UIKit
 import CoreData
 
-class GroupExpensesViewController: UIViewController {
-    @IBOutlet weak var expense: UILabel!
+class GroupExpensesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
+    
+    @IBOutlet weak var expensesListView: UITableView!
+    
     var groupSelected : Group!
     var groupDebtsController: GroupDebtsViewController?
 
@@ -18,7 +20,9 @@ class GroupExpensesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.expense.text = groupSelected.name
+        expensesListView.dataSource = self
+        expensesListView.delegate = self
+        
         print("Expenses: ", groupSelected.name)
     }
 
@@ -37,5 +41,49 @@ class GroupExpensesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (groupSelected.expenses?.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseCell", for: indexPath) as! ExpenseTableViewCell
+        
+        var price: NSDecimalNumber = 0.0
+        
+        let expense = groupSelected.expenses?.allObjects[indexPath.row] as! Expense
+        cell.expenseName.text = expense.desc
+        
+        for debt in expense.debts?.allObjects as! [Debt] {
+            price = price.adding(debt.amount!)
+        }
+        cell.price.text = String(describing: price) + "€"
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+//        let expense = groupSelected.expenses?.allObjects[indexPath.row]
+//        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let tabBarController = storyboard.instantiateViewController(withIdentifier: "GroupTabVC") as! GroupTabBarController
+//        
+//        
+//        if let viewControllers = tabBarController.viewControllers,
+//            let groupExpensesController = viewControllers.first as? GroupExpensesViewController {
+//            groupExpensesController.groupSelected = group
+//        }
+//        let groupDebtsController = tabBarController.viewControllers
+//        
+//        
+//        navigationController?.pushViewController(tabBarController, animated: true)
+        
+        
+    }
+    
+    
+
+
 
 }

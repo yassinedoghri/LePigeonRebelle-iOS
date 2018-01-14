@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="17B1003" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Debt" representedClassName="Debt" syncable="YES">
         <attribute name="amount" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <relationship name="expense" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="debts" inverseEntity="Expense" syncable="YES"/>
@@ -25,6 +25,7 @@
         <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="type" inverseEntity="Expense" syncable="YES"/>
     </entity>
     <entity name="Group" representedClassName="Group" syncable="YES">
+        <attribute name="budget" optional="YES" attributeType="Decimal" minValueString="0" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
         <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="group" inverseEntity="Expense" syncable="YES"/>
         <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupType" inverseName="groups" inverseEntity="GroupType" syncable="YES"/>
@@ -53,13 +54,13 @@
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="userGroupList" inverseEntity="User" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Debt" positionX="-657" positionY="239" width="128" height="103"/>
         <element name="Expense" positionX="-261" positionY="279" width="128" height="148"/>
         <element name="ExpenseCategory" positionX="124" positionY="81" width="128" height="88"/>
         <element name="ExpenseType" positionX="133" positionY="269" width="128" height="73"/>
-        <element name="Group" positionX="-83" positionY="-108" width="128" height="103"/>
+        <element name="Group" positionX="-83" positionY="-108" width="128" height="120"/>
         <element name="GroupType" positionX="250" positionY="-108" width="128" height="88"/>
         <element name="User" positionX="-677" positionY="-81" width="128" height="118"/>
-        <element name="Debt" positionX="-657" positionY="239" width="128" height="103"/>
         <element name="UserGroup" positionX="-387" positionY="-108" width="128" height="88"/>
     </elements>
 </model>

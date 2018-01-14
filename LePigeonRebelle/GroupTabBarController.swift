@@ -10,7 +10,7 @@ import UIKit
 
 class GroupTabBarController: UITabBarController, UITabBarControllerDelegate {
     
-    var grouopSelected: Group!
+    @IBOutlet weak var groupSelected: UINavigationItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()

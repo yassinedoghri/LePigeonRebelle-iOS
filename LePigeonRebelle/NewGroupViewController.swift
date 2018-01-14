@@ -21,9 +21,13 @@ class NewGroupViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     var pickerView = UIPickerView()
     
+    var groupTypes: [GroupType] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.loadTypes()
         
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -31,6 +35,8 @@ class NewGroupViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         type.inputView = pickerView
         type.textAlignment = .center
         type.placeholder = "Select type"
+        
+        
     }
     
     
@@ -91,46 +97,27 @@ class NewGroupViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     // returns the # of rows in each component..
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        
-        let fetchRequestGT:NSFetchRequest<GroupType> = GroupType.fetchRequest()
-        var result: Int = 0
-        do {
-            let searchResultsCount = try DataBaseController.persistentContainer.viewContext.count(for: fetchRequestGT)
-            result = searchResultsCount
-        }
-        catch {
-            print("Error: \(error)")
-        }
-        return result
+        return groupTypes.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let fetchRequestGT:NSFetchRequest<GroupType> = GroupType.fetchRequest()
-        var result: String = ""
-        
-        do {
-            let searchResults = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequestGT)
-            result = searchResults[row].wording!
-        }
-        catch {
-            print("Error: \(error)")
-        }
-        return result
+        return groupTypes[row].wording
     }
     
-    
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let fetchRequestGT:NSFetchRequest<GroupType> = GroupType.fetchRequest()
+    func loadTypes() {
+        let fetchRequest:NSFetchRequest<GroupType> = GroupType.fetchRequest()
         
         do {
-            let searchResults = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequestGT)
-            type.text = searchResults[row].wording!
-        }
-        catch {
+            groupTypes = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
+        } catch {
             print("Error: \(error)")
         }
         
+    }
+
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        type.text = groupTypes[row].wording
         type.resignFirstResponder()
         
     }
