@@ -13,11 +13,14 @@
 		153DC31F2009308800E7D0EB /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */; };
 		153DC321200B8F4900E7D0EB /* DebtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */; };
 		153DC323200C02C600E7D0EB /* DebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC322200C02C600E7D0EB /* DebtsViewController.swift */; };
+		157E6E762012329B00798AAD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E6E752012329B00798AAD /* MainTabBarController.swift */; };
 		158C64C5200799F1002E791D /* GroupExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64C4200799F1002E791D /* GroupExpensesViewController.swift */; };
 		158C64C92007C05D002E791D /* GroupDebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64C82007C05D002E791D /* GroupDebtsViewController.swift */; };
 		158C64CB2007C7AF002E791D /* GroupTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64CA2007C7AF002E791D /* GroupTabBarController.swift */; };
 		15B0FA3A2006CAAA0061CA6F /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */; };
 		15B0FA3C2006CAE20061CA6F /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FA3B2006CAE20061CA6F /* GroupTableViewCell.swift */; };
+		15BB9688201158EC0069A148 /* AddMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB9687201158EC0069A148 /* AddMemberView.swift */; };
+		15BB968A20115AF90069A148 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB968920115AF90069A148 /* AddMemberViewController.swift */; };
 		429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A8F200136FD007A5108 /* WelcomeViewController.swift */; };
 		429B9A9220015453007A5108 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A9120015453007A5108 /* NewExpenseViewController.swift */; };
 		8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */; };
@@ -42,6 +45,7 @@
 		885C868D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift */; };
 		885C868E20012A2300B62387 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867E20012A2300B62387 /* User+CoreDataClass.swift */; };
 		885C868F20012A2300B62387 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C867F20012A2300B62387 /* User+CoreDataProperties.swift */; };
+		FCD0AB82FA88218170800EE1 /* Pods_LePigeonRebelle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82E602F09363586BD9F15A0 /* Pods_LePigeonRebelle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,11 +55,14 @@
 		153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
 		153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtTableViewCell.swift; sourceTree = "<group>"; };
 		153DC322200C02C600E7D0EB /* DebtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsViewController.swift; sourceTree = "<group>"; };
+		157E6E752012329B00798AAD /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		158C64C4200799F1002E791D /* GroupExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupExpensesViewController.swift; path = ../GroupExpensesViewController.swift; sourceTree = "<group>"; };
 		158C64C82007C05D002E791D /* GroupDebtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDebtsViewController.swift; sourceTree = "<group>"; };
 		158C64CA2007C7AF002E791D /* GroupTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTabBarController.swift; sourceTree = "<group>"; };
 		15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		15B0FA3B2006CAE20061CA6F /* GroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		15BB9687201158EC0069A148 /* AddMemberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberView.swift; sourceTree = "<group>"; };
+		15BB968920115AF90069A148 /* AddMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
 		429B9A8F200136FD007A5108 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		429B9A9120015453007A5108 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
 		8822C4C81FFAC8A900EF325E /* LePigeonRebelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LePigeonRebelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +89,9 @@
 		885C867D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		885C867E20012A2300B62387 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		885C867F20012A2300B62387 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9549BD8CC7BA0B0354C8A02D /* Pods-LePigeonRebelle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LePigeonRebelle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle.debug.xcconfig"; sourceTree = "<group>"; };
+		A82E602F09363586BD9F15A0 /* Pods_LePigeonRebelle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LePigeonRebelle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1FE24EA66810B0970CE28A6 /* Pods-LePigeonRebelle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LePigeonRebelle.release.xcconfig"; path = "Pods/Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,17 +99,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD0AB82FA88218170800EE1 /* Pods_LePigeonRebelle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139076E775C6B73EA37249D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9549BD8CC7BA0B0354C8A02D /* Pods-LePigeonRebelle.debug.xcconfig */,
+				E1FE24EA66810B0970CE28A6 /* Pods-LePigeonRebelle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8822C4BF1FFAC8A800EF325E = {
 			isa = PBXGroup;
 			children = (
 				8822C4CA1FFAC8A900EF325E /* LePigeonRebelle */,
 				8822C4C91FFAC8A900EF325E /* Products */,
+				139076E775C6B73EA37249D4 /* Pods */,
+				CEA95C753DAB561A342DDD73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +141,9 @@
 				884044F7200005BA00D55FB4 /* DataBaseController.swift */,
 				8822C4CD1FFAC8A900EF325E /* ViewController.swift */,
 				8822C4CF1FFAC8A900EF325E /* Main.storyboard */,
+				157E6E752012329B00798AAD /* MainTabBarController.swift */,
+				15BB968920115AF90069A148 /* AddMemberViewController.swift */,
+				15BB9687201158EC0069A148 /* AddMemberView.swift */,
 				153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */,
 				153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */,
 				153DC31C200927A300E7D0EB /* ExpenseTableViewCell.swift */,
@@ -162,6 +187,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		CEA95C753DAB561A342DDD73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A82E602F09363586BD9F15A0 /* Pods_LePigeonRebelle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8822C4DD1FFAC8A900EF325E /* Build configuration list for PBXNativeTarget "LePigeonRebelle" */;
 			buildPhases = (
+				C27DA25C865BD0C6E9E6A56B /* [CP] Check Pods Manifest.lock */,
 				8822C4C41FFAC8A800EF325E /* Sources */,
 				8822C4C51FFAC8A800EF325E /* Frameworks */,
 				8822C4C61FFAC8A800EF325E /* Resources */,
+				4A0D94E81D6C5FE601E585B0 /* [CP] Embed Pods Frameworks */,
+				7BED5B2495D25F439613F5A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +265,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A0D94E81D6C5FE601E585B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BED5B2495D25F439613F5A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27DA25C865BD0C6E9E6A56B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LePigeonRebelle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8822C4C41FFAC8A800EF325E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -246,10 +336,12 @@
 				885C868A20012A2300B62387 /* Debt+CoreDataClass.swift in Sources */,
 				885C868420012A2300B62387 /* Expense+CoreDataClass.swift in Sources */,
 				884044F8200005BA00D55FB4 /* DataBaseController.swift in Sources */,
+				15BB968A20115AF90069A148 /* AddMemberViewController.swift in Sources */,
 				885C868D20012A2300B62387 /* ExpenseCategory+CoreDataProperties.swift in Sources */,
 				885C868220012A2300B62387 /* GroupType+CoreDataClass.swift in Sources */,
 				153DC31A2008F2AE00E7D0EB /* Group+CoreDataClass.swift in Sources */,
 				8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */,
+				157E6E762012329B00798AAD /* MainTabBarController.swift in Sources */,
 				429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */,
 				885C868320012A2300B62387 /* GroupType+CoreDataProperties.swift in Sources */,
 				885C868E20012A2300B62387 /* User+CoreDataClass.swift in Sources */,
@@ -261,6 +353,7 @@
 				885C868F20012A2300B62387 /* User+CoreDataProperties.swift in Sources */,
 				158C64C5200799F1002E791D /* GroupExpensesViewController.swift in Sources */,
 				15B0FA3A2006CAAA0061CA6F /* GroupsViewController.swift in Sources */,
+				15BB9688201158EC0069A148 /* AddMemberView.swift in Sources */,
 				153DC31F2009308800E7D0EB /* MemberTableViewCell.swift in Sources */,
 				158C64CB2007C7AF002E791D /* GroupTabBarController.swift in Sources */,
 				884044F62000022200D55FB4 /* NewGroupViewController.swift in Sources */,
@@ -386,6 +479,7 @@
 		};
 		8822C4DE1FFAC8A900EF325E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9549BD8CC7BA0B0354C8A02D /* Pods-LePigeonRebelle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LePigeonRebelle/Info.plist;
@@ -398,6 +492,7 @@
 		};
 		8822C4DF1FFAC8A900EF325E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1FE24EA66810B0970CE28A6 /* Pods-LePigeonRebelle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LePigeonRebelle/Info.plist;

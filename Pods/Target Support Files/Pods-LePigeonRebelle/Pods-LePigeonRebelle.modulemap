@@ -1,0 +1,6 @@
+framework module Pods_LePigeonRebelle {
+  umbrella header "Pods-LePigeonRebelle-umbrella.h"
+
+  export *
+  module * { export * }
+}

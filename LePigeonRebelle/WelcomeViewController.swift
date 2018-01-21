@@ -9,8 +9,13 @@
 import UIKit
 import CoreData
 
+var defaultUser:User?
+
+
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var userNameField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +41,7 @@ class WelcomeViewController: UIViewController {
                     print("\(String(describing: result.wording))")
                 }
             }
-
+            
         }
         catch {
             print("Error: \(error)")
@@ -100,9 +105,18 @@ class WelcomeViewController: UIViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func startPressed(_ sender: Any) {
+        let entityNameU:String = String(describing: User.self)
+        
+        let user:User = NSEntityDescription.insertNewObject(forEntityName: entityNameU, into: DataBaseController.persistentContainer.viewContext) as! User
+        user.name = userNameField.text!
+        user.isDefaultUser = true
+        DataBaseController.saveContext()
+        defaultUser = user
+        
+        UserDefaults.standard.set(true, forKey: "defaultUserCreated")
+
     }
+    
     
 }

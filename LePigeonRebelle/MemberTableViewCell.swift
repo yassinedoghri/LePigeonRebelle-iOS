@@ -13,7 +13,7 @@ class MemberTableViewCell: UITableViewCell {
     static let reuseIdentifier = "MemberCell"
     
     @IBOutlet var memberName: UILabel!
-    @IBOutlet var budget: UILabel!
+    @IBOutlet weak var budget: UITextField!
 
     override func awakeFromNib() {
         super.awakeFromNib()
