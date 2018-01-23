@@ -26,6 +26,7 @@ class NewGroupViewController: UIViewController, UITableViewDataSource, UITableVi
     var groupTypes: [GroupType] = []
     var userList: [User] = []
     var userGroup: UserGroup!
+    var group: Group!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +72,9 @@ class NewGroupViewController: UIViewController, UITableViewDataSource, UITableVi
             viewController.userList = userList
             viewController.delegate = self
         }
+//        if let viewController = segue.destination as? GroupTabBarController {
+//          viewController
+//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -119,6 +123,8 @@ class NewGroupViewController: UIViewController, UITableViewDataSource, UITableVi
             group.name = group_name
             group.type = resultGT
             
+            self.group = group
+            
             for user in userList as [User] {
                 let userGroup:UserGroup = NSEntityDescription.insertNewObject(forEntityName: "UserGroup", into: DataBaseController.persistentContainer.viewContext) as! UserGroup
                 userGroup.user = user
@@ -131,6 +137,7 @@ class NewGroupViewController: UIViewController, UITableViewDataSource, UITableVi
                 group.budget = group.budget?.adding(userGroup.budget!)
             }
             DataBaseController.saveContext()
+            self.navigationController?.popViewController(animated: true)
         }
         catch {
             print("Error: \(error)")

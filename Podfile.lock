@@ -1,12 +1,15 @@
 PODS:
+  - AvatarImageView (2.0.0)
   - SkyFloatingLabelTextField (3.4.0)
 
 DEPENDENCIES:
+  - AvatarImageView (= 2.0.0)
   - SkyFloatingLabelTextField (~> 3.0)
 
 SPEC CHECKSUMS:
+  AvatarImageView: 62203511a07bb32a86d9c640e693bf4610121b6e
   SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
 
-PODFILE CHECKSUM: 50deada542848274d3ffe2635205b32956d88bf8
+PODFILE CHECKSUM: 63656fa0c4f46269d5b928f078b4797134bd0cae
 
 COCOAPODS: 1.4.0

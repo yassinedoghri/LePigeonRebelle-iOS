@@ -11,11 +11,14 @@ import UIKit
 class GroupTabBarController: UITabBarController, UITabBarControllerDelegate {
     
     @IBOutlet weak var groupSelected: UINavigationItem!
+    
+    var group: Group!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         self.delegate = self
     }
 
@@ -24,6 +27,20 @@ class GroupTabBarController: UITabBarController, UITabBarControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func newExpense(_ sender: UIBarButtonItem) {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let newExpenseController = storyboard.instantiateViewController(withIdentifier: "NewExpenseVC") as! NewExpenseViewController
+//        
+//        if viewControllers.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? NewExpenseViewController {
+            print("Bonjour", group.name)
+            viewController.groupSelected = group
+        }
+    }
+
     func tabBarController(_ tabBarController: UITabBarController,
                           didSelect viewController: UIViewController){
         if (viewController.isKind(of: GroupExpensesViewController.classForCoder())){

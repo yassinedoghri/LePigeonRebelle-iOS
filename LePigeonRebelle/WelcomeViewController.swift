@@ -28,7 +28,7 @@ class WelcomeViewController: UIViewController {
             let searchResultsCount = try DataBaseController.persistentContainer.viewContext.count(for: fetchRequest)
             if (searchResultsCount == 0) {
                 print("Saving GroupType!")
-                let groupTypes: [String] = ["Appartment", "House", "Birthday", "Leisure", "Trip", "Other"]
+                let groupTypes: [String] = ["Appartment/House", "Birthday", "Leisure", "Trip", "Other"]
                 for type in groupTypes {
                     let groupType:GroupType = NSEntityDescription.insertNewObject(forEntityName: entityName, into: DataBaseController.persistentContainer.viewContext) as! GroupType
                     groupType.wording = type
@@ -84,7 +84,7 @@ class WelcomeViewController: UIViewController {
             let searchResultsCount = try DataBaseController.persistentContainer.viewContext.count(for: fetchRequestEC)
             if (searchResultsCount == 0) {
                 print("Saving ExpenseCategory!")
-                let expenseCategories: [String] = ["Leisure", "House", "Groceries", "Public Services", "Transport", "Life", "Other"]
+                let expenseCategories: [String] = ["Leisure", "House", "Groceries", "Public Services", "Transport", "Other"]
                 for category in expenseCategories {
                     let expenseCategory:ExpenseCategory = NSEntityDescription.insertNewObject(forEntityName: entityNameEC, into: DataBaseController.persistentContainer.viewContext) as! ExpenseCategory
                     expenseCategory.wording = category

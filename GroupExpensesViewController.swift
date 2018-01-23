@@ -26,11 +26,10 @@ class GroupExpensesViewController: UIViewController, UITableViewDataSource, UITa
         print("Expenses: ", groupSelected.name)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            let viewController = segue.destination as? NewExpenseViewController
+//                viewController?.groupLabel.text = groupSelected.name
+//    }
 
     /*
     // MARK: - Navigation
@@ -78,7 +77,6 @@ class GroupExpensesViewController: UIViewController, UITableViewDataSource, UITa
 //        
 //        
 //        navigationController?.pushViewController(tabBarController, animated: true)
-        
         
     }
     

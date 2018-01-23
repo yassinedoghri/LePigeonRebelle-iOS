@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import AvatarImageView
+
+struct TableAvatarImageConfig: AvatarImageViewConfiguration {
+    let shape: Shape = .circle
+    var fontName: String? = "Roboto"
+}
 
 class MemberTableViewCell: UITableViewCell {
     
@@ -14,6 +20,13 @@ class MemberTableViewCell: UITableViewCell {
     
     @IBOutlet var memberName: UILabel!
     @IBOutlet weak var budget: UITextField!
+    @IBOutlet weak var icon: UIImageView!
+    
+    @IBOutlet var avatarImageView: AvatarImageView! {
+        didSet {
+            avatarImageView.configuration = TableAvatarImageConfig()
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

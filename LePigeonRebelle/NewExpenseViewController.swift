@@ -11,35 +11,39 @@ import CoreData
 
 class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    @IBOutlet weak var groupField: UITextField!
     @IBOutlet weak var dateField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
     @IBOutlet weak var amountField: UITextField!
     @IBOutlet weak var payedByField: UITextField!
     @IBOutlet weak var expenseTypeField: UITextField!
-    @IBOutlet weak var payedForField: UITextField!
     @IBOutlet weak var commentField: UITextField!
+    @IBOutlet weak var groupLabel: UILabel!
     
     // date picker
     let datePicker = UIDatePicker()
     
     var types: [ExpenseType] = []
-    var groups: [Group] = []
+    var users: [User] = []
+    var userGroupList: [UserGroup] = []
+    var userOwingList: [User] = []
+    var groupSelected: Group!
+    var userPaying: User!
     
     let categoryPickerView = UIPickerView()
     let groupPickerView = UIPickerView()
+    let payedByPickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.groupField.delegate = self
         self.dateField.delegate = self
         self.descriptionField.delegate = self
         self.amountField.delegate = self
         self.payedByField.delegate = self
-        self.payedForField.delegate = self
         self.expenseTypeField.delegate = self
         self.commentField.delegate = self
+        
+        self.groupLabel.text = groupSelected.name
 
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
@@ -51,7 +55,8 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         self.createDatePicker()
         
         self.loadTypes()
-        self.loadGroups()
+        self.loadUserGroupList()
+        self.loadUsers()
         
         categoryPickerView.delegate = self
         categoryPickerView.dataSource = self
@@ -61,7 +66,11 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         groupPickerView.delegate = self
         groupPickerView.dataSource = self
         
-        groupField.inputView = groupPickerView
+        payedByPickerView.delegate = self
+        payedByPickerView.dataSource = self
+        
+        payedByField.inputView = payedByPickerView
+        
     }
     
     func dismissKeyboard() {
@@ -90,15 +99,26 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
 
     }
     
-    func loadGroups() {
-        let fetchRequest:NSFetchRequest<Group> = Group.fetchRequest()
+    func loadUserGroupList() {
+        let fetchRequest:NSFetchRequest<UserGroup> = UserGroup.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "group == %@", groupSelected)
         
         do {
-            groups = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
+            userGroupList = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
         } catch {
             print("Error: \(error)")
         }
-        
+    }
+    
+    func loadUsers() {
+        let fetchRequest:NSFetchRequest<User> = User.fetchRequest()
+
+        do {
+            users = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
+            
+        } catch {
+            print("Error: \(error)")
+        }
     }
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -108,11 +128,11 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         var numberOfRows: Int = 0
         
-        if (pickerView == groupPickerView) {
-            numberOfRows = groups.count
-        }
         if (pickerView == categoryPickerView) {
             numberOfRows = types.count
+        }
+        if (pickerView == payedByPickerView) {
+            numberOfRows = userGroupList.count
         }
         return numberOfRows
     }
@@ -120,11 +140,11 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         var title: String = ""
         
-        if (pickerView == groupPickerView) {
-            title = groups[row].name!
-        }
         if (pickerView == categoryPickerView) {
             title = types[row].wording!
+        }
+        if (pickerView == payedByPickerView) {
+            title = (userGroupList[row].user?.name!)!
         }
         return title
     }
@@ -134,9 +154,10 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
             expenseTypeField.text = types[row].wording
             expenseTypeField.resignFirstResponder()
         }
-        if (pickerView == groupPickerView) {
-            groupField.text = groups[row].name!
-            groupField.resignFirstResponder()
+        if (pickerView == payedByPickerView) {
+            payedByField.text = users[row].name!
+            userPaying = users[row]
+            payedByField.resignFirstResponder()
         }
     }
     
@@ -183,38 +204,30 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         dateFormatter.timeStyle = .none
         let date = dateFormatter.date(from: dateString)
         
-        let formatter = NumberFormatter()
-        formatter.generatesDecimalNumbers = true
-        let amount = formatter.number(from: amountField.text!)
-        let debt:Debt = NSEntityDescription.insertNewObject(forEntityName: "Debt", into: DataBaseController.persistentContainer.viewContext) as! Debt
-        debt.amount = amount as! NSDecimalNumber
-        
         let expense:Expense = NSEntityDescription.insertNewObject(forEntityName: entityName, into: DataBaseController.persistentContainer.viewContext) as! Expense
         expense.desc = description
         expense.date = date! as NSDate
         expense.comment = comment
-        expense.addToDebts(debt)
+        expense.group = groupSelected
         
-        if let group = groups.first(where: { $0.name == self.groupField.text! }) {
-            expense.group = group
+        let formatter = NumberFormatter()
+        formatter.generatesDecimalNumbers = true
+        let amount = formatter.number(from: amountField.text!)
+        for user in userOwingList {
+            let debt:Debt = NSEntityDescription.insertNewObject(forEntityName: "Debt", into: DataBaseController.persistentContainer.viewContext) as! Debt
+            debt.amount = amount as! NSDecimalNumber
+            debt.userPaying = userPaying
+            debt.userOwing = user
+            expense.addToDebts(debt)
         }
+        
+        
         if let type = types.first(where: { $0.wording == self.expenseTypeField.text! }) {
             expense.type = type
         }
         
         DataBaseController.saveContext()
-        
-//        let fetchRequest:NSFetchRequest<Expense> = Expense.fetchRequest()
-//        
-//        do {
-//            let searchResults = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
-//            for result in searchResults as [Expense] {
-//                print("\(String(describing: result.description))")
-//            }
-//        }
-//        catch {
-//            print("Error: \(error)")
-//        }
+
         self.navigationController?.popViewController(animated: true)
     }
     

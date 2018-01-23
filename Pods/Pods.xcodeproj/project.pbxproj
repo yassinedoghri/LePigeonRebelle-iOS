@@ -7,93 +7,149 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		243234FEDF346C66DDCBE56589DF0753 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		47AA3732DC33ADD0EF80108B397B7B0E /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */; };
-		5CCBB278B929C6C18AE9A952A30BE85D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		72B05E665E55728599BA1F839C1FD777 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
-		7F655A84B423F4C20B462D4656F7A126 /* Pods-LePigeonRebelle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D56AA5AD32F86C3C1DC1BE063C3129 /* Pods-LePigeonRebelle-dummy.m */; };
-		824A3AFCE7B7405AD7F04F4F3E3D3985 /* Pods-LePigeonRebelle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E917B739E3D9ED4457EB40F03DB86D /* Pods-LePigeonRebelle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C37B14CA2DBD27CEFE28D329C6CC1FE5 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 856C1FB00B0585E564D3D0EBDE90E4F5 /* SkyFloatingLabelTextField-dummy.m */; };
-		D16F880BB330C26F46295408E4504ADB /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */; };
-		EC4BA25966B5BA385FAB6A540D6AC618 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3998D604C4194CAA0ABE4BC6A6FD0608 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18BBEB097DA24DE285386F703D589DA5 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6C0C372D2F17188A5AB1EF110B9663 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		2747422AAC5F5AA95A3F14085F3BE7EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4E2783F5C9F93E455FA70944DE405599 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF8A06C691481210A3ED6E28E272C3B /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5183026C6A3110C5BA7C287806E3CB01 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01229A2F7C6D80ED987F029AD42FFC /* UITextField+fixCaretPosition.swift */; };
+		5A10DF71A04A189EE3FC9A631683402A /* Pods-LePigeonRebelle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D56AA5AD32F86C3C1DC1BE063C3129 /* Pods-LePigeonRebelle-dummy.m */; };
+		61EE35C1E8B991585D36E43673AE4CCE /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F3A321A38584AF19DAA21DCA69192 /* SkyFloatingLabelTextField.swift */; };
+		6829924410F432BF6D8473A751CC6D6C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E6081BBE31FF78A28F10F1FCD5763 /* AvatarImageView.swift */; };
+		6F0B0EC4F704C707FB6D589B5A10766C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		75E417F776E57AE01422F4924EC5EE89 /* AvatarImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8212F0D6F7CC0443780111D19CA264A /* AvatarImageView-dummy.m */; };
+		7AC62EE704BC2EB38E1552DBE42846E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8E14BFC3DD10DD3FECBBFBA368AF103E /* AvatarImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD9F89DB911E2A1DCD8C789EA97CE0 /* AvatarImageViewConfiguration.swift */; };
+		B2FD99FFFE9D834712DB997DD4C3213F /* Pods-LePigeonRebelle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E917B739E3D9ED4457EB40F03DB86D /* Pods-LePigeonRebelle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C09608A69D0D178ADE7E63AFF08C26C9 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D78D6C6BE88C272BB51C212389758CA /* SkyFloatingLabelTextField-dummy.m */; };
+		CAFA1E36F5B6B358193FA21194E97E7B /* ColorCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5966D1E3B77F60CD46A296185CA192 /* ColorCache.swift */; };
+		FF061E9E283C07752486083017BCA9E2 /* AvatarImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFDBB7729902DCB9F6ACA7D05AD3091 /* AvatarImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		68DF1B5B455A564A0DBF174F17C588A5 /* PBXContainerItemProxy */ = {
+		221810F4D8559AEA80CB359D15C5EDE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10F5654D42902AA48A6200F4C5517C49;
+			remoteGlobalIDString = AE41C10EE8BE4D0C2D24CCDED6D2A8A0;
 			remoteInfo = SkyFloatingLabelTextField;
+		};
+		6EF30FEB71480A0687D0D2C0E2364A23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6A2806576FA0E8E5BF240ADEA645A9;
+			remoteInfo = AvatarImageView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04DA1F498471072D7785D414FB146E13 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		133918A86BAF9C183033BA4EEF1C4E67 /* Pods-LePigeonRebelle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LePigeonRebelle.debug.xcconfig"; sourceTree = "<group>"; };
 		16A065E023F1420353A0B4FF8D39E824 /* Pods-LePigeonRebelle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LePigeonRebelle.release.xcconfig"; sourceTree = "<group>"; };
-		18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
-		212B52B1676A4819900A99C4B5BC62ED /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
-		3998D604C4194CAA0ABE4BC6A6FD0608 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
-		47C9E5A771B58D18420E13898741CDB5 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		1EFDBB7729902DCB9F6ACA7D05AD3091 /* AvatarImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvatarImageView-umbrella.h"; sourceTree = "<group>"; };
+		3A01229A2F7C6D80ED987F029AD42FFC /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		3FC91D3CA5653975028EB63E6495A7B6 /* AvatarImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AvatarImageView.modulemap; sourceTree = "<group>"; };
+		423E6081BBE31FF78A28F10F1FCD5763 /* AvatarImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarImageView.swift; path = AvatarImageView/AvatarImageView.swift; sourceTree = "<group>"; };
 		49D15067B2AA2F481EEC4CB7E992AD02 /* Pods-LePigeonRebelle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LePigeonRebelle-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DD04EE89DA5344B914E7382787B8E0B /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBA9606B79860B96D69AA22E6895934 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6804FB54F18C5058CCAB97C41F5D7C85 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
 		6D84070A2991504D04AF997D5DEC0C15 /* Pods-LePigeonRebelle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LePigeonRebelle-frameworks.sh"; sourceTree = "<group>"; };
 		75D56AA5AD32F86C3C1DC1BE063C3129 /* Pods-LePigeonRebelle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LePigeonRebelle-dummy.m"; sourceTree = "<group>"; };
-		856C1FB00B0585E564D3D0EBDE90E4F5 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		7FBD9F89DB911E2A1DCD8C789EA97CE0 /* AvatarImageViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarImageViewConfiguration.swift; path = AvatarImageView/AvatarImageViewConfiguration.swift; sourceTree = "<group>"; };
+		8AE35D80B005935085DE6D7A9DB60DCD /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
 		9041F28BEEB3AE70F291497B6CDF3893 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A1310998C178DD639F78C6D6CAA05E9 /* Pods_LePigeonRebelle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LePigeonRebelle.framework; path = "Pods-LePigeonRebelle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A8C0D23E8E7BF9D414EC939C3B8D0E1 /* AvatarImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AvatarImageView.xcconfig; sourceTree = "<group>"; };
+		9BE17C6C2A3493AFBB4835529E210D01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D78D6C6BE88C272BB51C212389758CA /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		9FA390AC6FCA01E4C5BDF3B07175DA23 /* AvatarImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AvatarImageView.framework; path = AvatarImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B158AA5761CCFE898661976BF604AA77 /* AvatarImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvatarImageView-prefix.pch"; sourceTree = "<group>"; };
+		BEB13B956239ECAF68D5E19B2E384455 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD03F54C6148750F2181A263D9A6E03 /* Pods-LePigeonRebelle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LePigeonRebelle-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D724AD345501CCA3933C09D47C31C5E9 /* Pods_LePigeonRebelle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LePigeonRebelle.framework; path = "Pods-LePigeonRebelle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
-		DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		E33F3A321A38584AF19DAA21DCA69192 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
 		E4ECEB39E1FF92BD73C939004E0D2554 /* Pods-LePigeonRebelle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LePigeonRebelle.modulemap"; sourceTree = "<group>"; };
-		F4ADEA7F9BD0721D0AF2472DC64BBCFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8212F0D6F7CC0443780111D19CA264A /* AvatarImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AvatarImageView-dummy.m"; sourceTree = "<group>"; };
+		EA5966D1E3B77F60CD46A296185CA192 /* ColorCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCache.swift; path = AvatarImageView/ColorCache.swift; sourceTree = "<group>"; };
+		EEF8A06C691481210A3ED6E28E272C3B /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
 		F4E917B739E3D9ED4457EB40F03DB86D /* Pods-LePigeonRebelle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LePigeonRebelle-umbrella.h"; sourceTree = "<group>"; };
+		F876FA3742AD4222D18174008AD23375 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
 		FBAD05C7A44F490C1F154DE4C825DF37 /* Pods-LePigeonRebelle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LePigeonRebelle-resources.sh"; sourceTree = "<group>"; };
+		FC6C0C372D2F17188A5AB1EF110B9663 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D1B673F648E1531D053FACD80398216 /* Frameworks */ = {
+		33D58066C87B61D2466762720AEA280D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CCBB278B929C6C18AE9A952A30BE85D /* Foundation.framework in Frameworks */,
+				7AC62EE704BC2EB38E1552DBE42846E8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C58F7F49A5BE7328515BABE5287B7F12 /* Frameworks */ = {
+		8B429EE973097615F61F7C994D2D1FB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				243234FEDF346C66DDCBE56589DF0753 /* Foundation.framework in Frameworks */,
+				6F0B0EC4F704C707FB6D589B5A10766C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E040DEE69D78F2F3320B613B4A383237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2747422AAC5F5AA95A3F14085F3BE7EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C8F83CCEF573C773C34D82C14313BF9 /* Support Files */ = {
+		304EAA3AAAFEB2C58A041615742498F3 /* AvatarImageView */ = {
 			isa = PBXGroup;
 			children = (
-				F4ADEA7F9BD0721D0AF2472DC64BBCFD /* Info.plist */,
-				47C9E5A771B58D18420E13898741CDB5 /* SkyFloatingLabelTextField.modulemap */,
-				6804FB54F18C5058CCAB97C41F5D7C85 /* SkyFloatingLabelTextField.xcconfig */,
-				856C1FB00B0585E564D3D0EBDE90E4F5 /* SkyFloatingLabelTextField-dummy.m */,
-				212B52B1676A4819900A99C4B5BC62ED /* SkyFloatingLabelTextField-prefix.pch */,
-				3998D604C4194CAA0ABE4BC6A6FD0608 /* SkyFloatingLabelTextField-umbrella.h */,
+				423E6081BBE31FF78A28F10F1FCD5763 /* AvatarImageView.swift */,
+				7FBD9F89DB911E2A1DCD8C789EA97CE0 /* AvatarImageViewConfiguration.swift */,
+				EA5966D1E3B77F60CD46A296185CA192 /* ColorCache.swift */,
+				E2896EC075ADBB1749FE4D1AFC85AE6D /* Support Files */,
+			);
+			name = AvatarImageView;
+			path = AvatarImageView;
+			sourceTree = "<group>";
+		};
+		359EFF6F2A23F310D81D74CD952FBCD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				304EAA3AAAFEB2C58A041615742498F3 /* AvatarImageView */,
+				3B31F7E8912B55C9F80E7F59D8F5B6D8 /* SkyFloatingLabelTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B31F7E8912B55C9F80E7F59D8F5B6D8 /* SkyFloatingLabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E33F3A321A38584AF19DAA21DCA69192 /* SkyFloatingLabelTextField.swift */,
+				FC6C0C372D2F17188A5AB1EF110B9663 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				3A01229A2F7C6D80ED987F029AD42FFC /* UITextField+fixCaretPosition.swift */,
+				76EFD04A17C941ED7D0C89D105DD7C1F /* Support Files */,
+			);
+			name = SkyFloatingLabelTextField;
+			path = SkyFloatingLabelTextField;
+			sourceTree = "<group>";
+		};
+		76EFD04A17C941ED7D0C89D105DD7C1F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BE17C6C2A3493AFBB4835529E210D01 /* Info.plist */,
+				8AE35D80B005935085DE6D7A9DB60DCD /* SkyFloatingLabelTextField.modulemap */,
+				5FBA9606B79860B96D69AA22E6895934 /* SkyFloatingLabelTextField.xcconfig */,
+				9D78D6C6BE88C272BB51C212389758CA /* SkyFloatingLabelTextField-dummy.m */,
+				F876FA3742AD4222D18174008AD23375 /* SkyFloatingLabelTextField-prefix.pch */,
+				EEF8A06C691481210A3ED6E28E272C3B /* SkyFloatingLabelTextField-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SkyFloatingLabelTextField";
-			sourceTree = "<group>";
-		};
-		3E538C50B5FBAB3A28B0BDDB5EEAA44A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BE06ED5906FCC1C2AA7EDA322B1D832D /* SkyFloatingLabelTextField */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -101,8 +157,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3E538C50B5FBAB3A28B0BDDB5EEAA44A /* Pods */,
-				CB42A10AFF85F51BE2770580C706B736 /* Products */,
+				359EFF6F2A23F310D81D74CD952FBCD0 /* Pods */,
+				C2265772ECC49DF242678E3979C75D45 /* Products */,
 				8E6213861F586887B3AE2E0106FEA155 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -123,23 +179,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE06ED5906FCC1C2AA7EDA322B1D832D /* SkyFloatingLabelTextField */ = {
+		C2265772ECC49DF242678E3979C75D45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */,
-				18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */,
-				DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */,
-				0C8F83CCEF573C773C34D82C14313BF9 /* Support Files */,
-			);
-			name = SkyFloatingLabelTextField;
-			path = SkyFloatingLabelTextField;
-			sourceTree = "<group>";
-		};
-		CB42A10AFF85F51BE2770580C706B736 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D724AD345501CCA3933C09D47C31C5E9 /* Pods_LePigeonRebelle.framework */,
-				04DA1F498471072D7785D414FB146E13 /* SkyFloatingLabelTextField.framework */,
+				9FA390AC6FCA01E4C5BDF3B07175DA23 /* AvatarImageView.framework */,
+				9A1310998C178DD639F78C6D6CAA05E9 /* Pods_LePigeonRebelle.framework */,
+				4DD04EE89DA5344B914E7382787B8E0B /* SkyFloatingLabelTextField.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +195,20 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E2896EC075ADBB1749FE4D1AFC85AE6D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FC91D3CA5653975028EB63E6495A7B6 /* AvatarImageView.modulemap */,
+				9A8C0D23E8E7BF9D414EC939C3B8D0E1 /* AvatarImageView.xcconfig */,
+				E8212F0D6F7CC0443780111D19CA264A /* AvatarImageView-dummy.m */,
+				B158AA5761CCFE898661976BF604AA77 /* AvatarImageView-prefix.pch */,
+				1EFDBB7729902DCB9F6ACA7D05AD3091 /* AvatarImageView-umbrella.h */,
+				BEB13B956239ECAF68D5E19B2E384455 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AvatarImageView";
 			sourceTree = "<group>";
 		};
 		EB881091A3E1B0C83D15FD634A942696 /* Pods-LePigeonRebelle */ = {
@@ -173,32 +232,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2E79D346DFDB16396CA58909CACBA110 /* Headers */ = {
+		14544BB92A98D5872F7762717C06F110 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				824A3AFCE7B7405AD7F04F4F3E3D3985 /* Pods-LePigeonRebelle-umbrella.h in Headers */,
+				4E2783F5C9F93E455FA70944DE405599 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E95838B5397920534D60522CAB974AA /* Headers */ = {
+		2B0B1CBA16B6119332089A93DB1D5F9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4BA25966B5BA385FAB6A540D6AC618 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+				B2FD99FFFE9D834712DB997DD4C3213F /* Pods-LePigeonRebelle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B7860A5EE3D9BC2E4D6794B6855A8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF061E9E283C07752486083017BCA9E2 /* AvatarImageView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		10F5654D42902AA48A6200F4C5517C49 /* SkyFloatingLabelTextField */ = {
+		AE41C10EE8BE4D0C2D24CCDED6D2A8A0 /* SkyFloatingLabelTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B4B49A0C968E876A3A5BA5BA76706FA /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildConfigurationList = 023E7582D55D0AF18F7C8384AE8CB7EE /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
 			buildPhases = (
-				1E59CE7F6227633B04AB4A74CAC56631 /* Sources */,
-				5D1B673F648E1531D053FACD80398216 /* Frameworks */,
-				6E95838B5397920534D60522CAB974AA /* Headers */,
+				A13F4B32498769471521E341E0420665 /* Sources */,
+				8B429EE973097615F61F7C994D2D1FB6 /* Frameworks */,
+				14544BB92A98D5872F7762717C06F110 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -206,25 +273,43 @@
 			);
 			name = SkyFloatingLabelTextField;
 			productName = SkyFloatingLabelTextField;
-			productReference = 04DA1F498471072D7785D414FB146E13 /* SkyFloatingLabelTextField.framework */;
+			productReference = 4DD04EE89DA5344B914E7382787B8E0B /* SkyFloatingLabelTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		334AB67555D3E07D67A45CAB6A5DB380 /* Pods-LePigeonRebelle */ = {
+		AF929BD864AA642EC35693821C0338C8 /* Pods-LePigeonRebelle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D005CEBDC70AD2FD548485097AB888BE /* Build configuration list for PBXNativeTarget "Pods-LePigeonRebelle" */;
+			buildConfigurationList = 206A8DB4F6F65C7BC9ECCEB36AF90AF9 /* Build configuration list for PBXNativeTarget "Pods-LePigeonRebelle" */;
 			buildPhases = (
-				2168BC38C7B9436069136D87FA2BECE5 /* Sources */,
-				C58F7F49A5BE7328515BABE5287B7F12 /* Frameworks */,
-				2E79D346DFDB16396CA58909CACBA110 /* Headers */,
+				82693087E87D10DD2FA5EBF058DCBE71 /* Sources */,
+				33D58066C87B61D2466762720AEA280D /* Frameworks */,
+				2B0B1CBA16B6119332089A93DB1D5F9B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1FEFCEC223DF9E99A2D6E1EB618BEC46 /* PBXTargetDependency */,
+				8347AA9DC6DE19D80B263711CC5C6C41 /* PBXTargetDependency */,
+				566274D509E6BA3F58ECB276B06D77DC /* PBXTargetDependency */,
 			);
 			name = "Pods-LePigeonRebelle";
 			productName = "Pods-LePigeonRebelle";
-			productReference = D724AD345501CCA3933C09D47C31C5E9 /* Pods_LePigeonRebelle.framework */;
+			productReference = 9A1310998C178DD639F78C6D6CAA05E9 /* Pods_LePigeonRebelle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC6A2806576FA0E8E5BF240ADEA645A9 /* AvatarImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C0AD2CB9C7E854567FB418085A3793 /* Build configuration list for PBXNativeTarget "AvatarImageView" */;
+			buildPhases = (
+				87B54F6D83C63BEFA0979DC38A9B4F58 /* Sources */,
+				E040DEE69D78F2F3320B613B4A383237 /* Frameworks */,
+				82B7860A5EE3D9BC2E4D6794B6855A8C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvatarImageView;
+			productName = AvatarImageView;
+			productReference = 9FA390AC6FCA01E4C5BDF3B07175DA23 /* AvatarImageView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -244,48 +329,98 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CB42A10AFF85F51BE2770580C706B736 /* Products */;
+			productRefGroup = C2265772ECC49DF242678E3979C75D45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				334AB67555D3E07D67A45CAB6A5DB380 /* Pods-LePigeonRebelle */,
-				10F5654D42902AA48A6200F4C5517C49 /* SkyFloatingLabelTextField */,
+				BC6A2806576FA0E8E5BF240ADEA645A9 /* AvatarImageView */,
+				AF929BD864AA642EC35693821C0338C8 /* Pods-LePigeonRebelle */,
+				AE41C10EE8BE4D0C2D24CCDED6D2A8A0 /* SkyFloatingLabelTextField */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E59CE7F6227633B04AB4A74CAC56631 /* Sources */ = {
+		82693087E87D10DD2FA5EBF058DCBE71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C37B14CA2DBD27CEFE28D329C6CC1FE5 /* SkyFloatingLabelTextField-dummy.m in Sources */,
-				47AA3732DC33ADD0EF80108B397B7B0E /* SkyFloatingLabelTextField.swift in Sources */,
-				72B05E665E55728599BA1F839C1FD777 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
-				D16F880BB330C26F46295408E4504ADB /* UITextField+fixCaretPosition.swift in Sources */,
+				5A10DF71A04A189EE3FC9A631683402A /* Pods-LePigeonRebelle-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2168BC38C7B9436069136D87FA2BECE5 /* Sources */ = {
+		87B54F6D83C63BEFA0979DC38A9B4F58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F655A84B423F4C20B462D4656F7A126 /* Pods-LePigeonRebelle-dummy.m in Sources */,
+				75E417F776E57AE01422F4924EC5EE89 /* AvatarImageView-dummy.m in Sources */,
+				6829924410F432BF6D8473A751CC6D6C /* AvatarImageView.swift in Sources */,
+				8E14BFC3DD10DD3FECBBFBA368AF103E /* AvatarImageViewConfiguration.swift in Sources */,
+				CAFA1E36F5B6B358193FA21194E97E7B /* ColorCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13F4B32498769471521E341E0420665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09608A69D0D178ADE7E63AFF08C26C9 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				61EE35C1E8B991585D36E43673AE4CCE /* SkyFloatingLabelTextField.swift in Sources */,
+				18BBEB097DA24DE285386F703D589DA5 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				5183026C6A3110C5BA7C287806E3CB01 /* UITextField+fixCaretPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1FEFCEC223DF9E99A2D6E1EB618BEC46 /* PBXTargetDependency */ = {
+		566274D509E6BA3F58ECB276B06D77DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SkyFloatingLabelTextField;
-			target = 10F5654D42902AA48A6200F4C5517C49 /* SkyFloatingLabelTextField */;
-			targetProxy = 68DF1B5B455A564A0DBF174F17C588A5 /* PBXContainerItemProxy */;
+			target = AE41C10EE8BE4D0C2D24CCDED6D2A8A0 /* SkyFloatingLabelTextField */;
+			targetProxy = 221810F4D8559AEA80CB359D15C5EDE4 /* PBXContainerItemProxy */;
+		};
+		8347AA9DC6DE19D80B263711CC5C6C41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AvatarImageView;
+			target = BC6A2806576FA0E8E5BF240ADEA645A9 /* AvatarImageView */;
+			targetProxy = 6EF30FEB71480A0687D0D2C0E2364A23 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0D4768173A975BC175F26A208B832860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8C0D23E8E7BF9D414EC939C3B8D0E1 /* AvatarImageView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AvatarImageView/AvatarImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AvatarImageView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AvatarImageView/AvatarImageView.modulemap";
+				PRODUCT_NAME = AvatarImageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1574DFBE46C3A95056829BC718547A7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -341,9 +476,9 @@
 			};
 			name = Release;
 		};
-		18E12885145109F8DD2B52DF55B54B56 /* Debug */ = {
+		221411C40C4363193704F9B6F21D4426 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 133918A86BAF9C183033BA4EEF1C4E67 /* Pods-LePigeonRebelle.debug.xcconfig */;
+			baseConfigurationReference = 5FBA9606B79860B96D69AA22E6895934 /* SkyFloatingLabelTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -354,28 +489,56 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LePigeonRebelle/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LePigeonRebelle;
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_NAME = SkyFloatingLabelTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		364AA6A9CDFE87A6DA22B3F8EFC1D3F6 /* Release */ = {
+		2C5795335CF8748FE668D4279026D2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8C0D23E8E7BF9D414EC939C3B8D0E1 /* AvatarImageView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AvatarImageView/AvatarImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AvatarImageView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AvatarImageView/AvatarImageView.modulemap";
+				PRODUCT_NAME = AvatarImageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3AC798A0EB5E986150804B717D4F91C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16A065E023F1420353A0B4FF8D39E824 /* Pods-LePigeonRebelle.release.xcconfig */;
 			buildSettings = {
@@ -469,9 +632,43 @@
 			};
 			name = Debug;
 		};
-		808733518E05CB0E05D51FC88899F222 /* Release */ = {
+		926E07FDC345172928405E98679481E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6804FB54F18C5058CCAB97C41F5D7C85 /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = 133918A86BAF9C183033BA4EEF1C4E67 /* Pods-LePigeonRebelle.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LePigeonRebelle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LePigeonRebelle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9BB1F706C7546E9F7791694361A99CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FBA9606B79860B96D69AA22E6895934 /* SkyFloatingLabelTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -501,40 +698,27 @@
 			};
 			name = Release;
 		};
-		CC471AFF56555DA1BEC81993A70FB5DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6804FB54F18C5058CCAB97C41F5D7C85 /* SkyFloatingLabelTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		023E7582D55D0AF18F7C8384AE8CB7EE /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221411C40C4363193704F9B6F21D4426 /* Debug */,
+				9BB1F706C7546E9F7791694361A99CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		206A8DB4F6F65C7BC9ECCEB36AF90AF9 /* Build configuration list for PBXNativeTarget "Pods-LePigeonRebelle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926E07FDC345172928405E98679481E4 /* Debug */,
+				3AC798A0EB5E986150804B717D4F91C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -544,20 +728,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B4B49A0C968E876A3A5BA5BA76706FA /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+		62C0AD2CB9C7E854567FB418085A3793 /* Build configuration list for PBXNativeTarget "AvatarImageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC471AFF56555DA1BEC81993A70FB5DD /* Debug */,
-				808733518E05CB0E05D51FC88899F222 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D005CEBDC70AD2FD548485097AB888BE /* Build configuration list for PBXNativeTarget "Pods-LePigeonRebelle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18E12885145109F8DD2B52DF55B54B56 /* Debug */,
-				364AA6A9CDFE87A6DA22B3F8EFC1D3F6 /* Release */,
+				2C5795335CF8748FE668D4279026D2E0 /* Debug */,
+				0D4768173A975BC175F26A208B832860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

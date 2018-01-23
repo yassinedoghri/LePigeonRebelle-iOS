@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153B2631201621FA00F06D06 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B2625201621FA00F06D06 /* Roboto-Black.ttf */; };
+		153B2632201621FA00F06D06 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B2626201621FA00F06D06 /* Roboto-BlackItalic.ttf */; };
+		153B2633201621FA00F06D06 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B2627201621FA00F06D06 /* Roboto-Bold.ttf */; };
+		153B2634201621FA00F06D06 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B2628201621FA00F06D06 /* Roboto-BoldItalic.ttf */; };
+		153B2635201621FA00F06D06 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B2629201621FA00F06D06 /* Roboto-Italic.ttf */; };
+		153B2636201621FA00F06D06 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B262A201621FA00F06D06 /* Roboto-Light.ttf */; };
+		153B2637201621FA00F06D06 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B262B201621FA00F06D06 /* Roboto-LightItalic.ttf */; };
+		153B2638201621FA00F06D06 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B262C201621FA00F06D06 /* Roboto-Medium.ttf */; };
+		153B2639201621FA00F06D06 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B262D201621FA00F06D06 /* Roboto-MediumItalic.ttf */; };
+		153B263A201621FA00F06D06 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B262E201621FA00F06D06 /* Roboto-Regular.ttf */; };
+		153B263B201621FA00F06D06 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B262F201621FA00F06D06 /* Roboto-Thin.ttf */; };
+		153B263C201621FA00F06D06 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153B2630201621FA00F06D06 /* Roboto-ThinItalic.ttf */; };
 		153DC31A2008F2AE00E7D0EB /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC3182008F2AE00E7D0EB /* Group+CoreDataClass.swift */; };
 		153DC31B2008F2AE00E7D0EB /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC3192008F2AE00E7D0EB /* Group+CoreDataProperties.swift */; };
 		153DC31D200927A300E7D0EB /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC31C200927A300E7D0EB /* ExpenseTableViewCell.swift */; };
 		153DC31F2009308800E7D0EB /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */; };
 		153DC321200B8F4900E7D0EB /* DebtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */; };
 		153DC323200C02C600E7D0EB /* DebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DC322200C02C600E7D0EB /* DebtsViewController.swift */; };
+		153F5FBA20154F570093DE34 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F5FB920154F570093DE34 /* FriendsViewController.swift */; };
 		157E6E762012329B00798AAD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157E6E752012329B00798AAD /* MainTabBarController.swift */; };
 		158C64C5200799F1002E791D /* GroupExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64C4200799F1002E791D /* GroupExpensesViewController.swift */; };
 		158C64C92007C05D002E791D /* GroupDebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C64C82007C05D002E791D /* GroupDebtsViewController.swift */; };
@@ -49,12 +62,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153B2625201621FA00F06D06 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../../../../Downloads/Roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		153B2626201621FA00F06D06 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "../../../../Downloads/Roboto/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		153B2627201621FA00F06D06 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Downloads/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		153B2628201621FA00F06D06 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "../../../../Downloads/Roboto/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		153B2629201621FA00F06D06 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "../../../../Downloads/Roboto/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		153B262A201621FA00F06D06 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../../Downloads/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		153B262B201621FA00F06D06 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "../../../../Downloads/Roboto/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		153B262C201621FA00F06D06 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Downloads/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		153B262D201621FA00F06D06 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../../../Downloads/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		153B262E201621FA00F06D06 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../Downloads/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		153B262F201621FA00F06D06 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../../../../Downloads/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		153B2630201621FA00F06D06 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "../../../../Downloads/Roboto/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		153DC3182008F2AE00E7D0EB /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Group+CoreDataClass.swift"; path = "../Group+CoreDataClass.swift"; sourceTree = "<group>"; };
 		153DC3192008F2AE00E7D0EB /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Group+CoreDataProperties.swift"; path = "../Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		153DC31C200927A300E7D0EB /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
 		153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
 		153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtTableViewCell.swift; sourceTree = "<group>"; };
 		153DC322200C02C600E7D0EB /* DebtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsViewController.swift; sourceTree = "<group>"; };
+		153F5FB920154F570093DE34 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		157E6E752012329B00798AAD /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		158C64C4200799F1002E791D /* GroupExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupExpensesViewController.swift; path = ../GroupExpensesViewController.swift; sourceTree = "<group>"; };
 		158C64C82007C05D002E791D /* GroupDebtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDebtsViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +141,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		153B2624201621D900F06D06 /* Roboto Font */ = {
+			isa = PBXGroup;
+			children = (
+				153B2625201621FA00F06D06 /* Roboto-Black.ttf */,
+				153B2626201621FA00F06D06 /* Roboto-BlackItalic.ttf */,
+				153B2627201621FA00F06D06 /* Roboto-Bold.ttf */,
+				153B2628201621FA00F06D06 /* Roboto-BoldItalic.ttf */,
+				153B2629201621FA00F06D06 /* Roboto-Italic.ttf */,
+				153B262A201621FA00F06D06 /* Roboto-Light.ttf */,
+				153B262B201621FA00F06D06 /* Roboto-LightItalic.ttf */,
+				153B262C201621FA00F06D06 /* Roboto-Medium.ttf */,
+				153B262D201621FA00F06D06 /* Roboto-MediumItalic.ttf */,
+				153B262E201621FA00F06D06 /* Roboto-Regular.ttf */,
+				153B262F201621FA00F06D06 /* Roboto-Thin.ttf */,
+				153B2630201621FA00F06D06 /* Roboto-ThinItalic.ttf */,
+			);
+			name = "Roboto Font";
+			sourceTree = "<group>";
+		};
 		8822C4BF1FFAC8A800EF325E = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +181,7 @@
 		8822C4CA1FFAC8A900EF325E /* LePigeonRebelle */ = {
 			isa = PBXGroup;
 			children = (
+				153B2624201621D900F06D06 /* Roboto Font */,
 				883F7D8B1FFFFAEB00F62BF6 /* Models */,
 				8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */,
 				884044F7200005BA00D55FB4 /* DataBaseController.swift */,
@@ -152,6 +198,7 @@
 				158C64C4200799F1002E791D /* GroupExpensesViewController.swift */,
 				15B0FA392006CAAA0061CA6F /* GroupsViewController.swift */,
 				153DC322200C02C600E7D0EB /* DebtsViewController.swift */,
+				153F5FB920154F570093DE34 /* FriendsViewController.swift */,
 				158C64CA2007C7AF002E791D /* GroupTabBarController.swift */,
 				158C64C82007C05D002E791D /* GroupDebtsViewController.swift */,
 				15B0FA3B2006CAE20061CA6F /* GroupTableViewCell.swift */,
@@ -257,9 +304,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153B263C201621FA00F06D06 /* Roboto-ThinItalic.ttf in Resources */,
+				153B263B201621FA00F06D06 /* Roboto-Thin.ttf in Resources */,
 				8822C4D91FFAC8A900EF325E /* LaunchScreen.storyboard in Resources */,
 				8822C4D61FFAC8A900EF325E /* Assets.xcassets in Resources */,
+				153B2637201621FA00F06D06 /* Roboto-LightItalic.ttf in Resources */,
+				153B2633201621FA00F06D06 /* Roboto-Bold.ttf in Resources */,
+				153B2639201621FA00F06D06 /* Roboto-MediumItalic.ttf in Resources */,
+				153B2632201621FA00F06D06 /* Roboto-BlackItalic.ttf in Resources */,
 				8822C4D11FFAC8A900EF325E /* Main.storyboard in Resources */,
+				153B2635201621FA00F06D06 /* Roboto-Italic.ttf in Resources */,
+				153B2634201621FA00F06D06 /* Roboto-BoldItalic.ttf in Resources */,
+				153B2638201621FA00F06D06 /* Roboto-Medium.ttf in Resources */,
+				153B263A201621FA00F06D06 /* Roboto-Regular.ttf in Resources */,
+				153B2631201621FA00F06D06 /* Roboto-Black.ttf in Resources */,
+				153B2636201621FA00F06D06 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +332,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AvatarImageView/AvatarImageView.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AvatarImageView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +413,7 @@
 				885C868520012A2300B62387 /* Expense+CoreDataProperties.swift in Sources */,
 				885C868F20012A2300B62387 /* User+CoreDataProperties.swift in Sources */,
 				158C64C5200799F1002E791D /* GroupExpensesViewController.swift in Sources */,
+				153F5FBA20154F570093DE34 /* FriendsViewController.swift in Sources */,
 				15B0FA3A2006CAAA0061CA6F /* GroupsViewController.swift in Sources */,
 				15BB9688201158EC0069A148 /* AddMemberView.swift in Sources */,
 				153DC31F2009308800E7D0EB /* MemberTableViewCell.swift in Sources */,

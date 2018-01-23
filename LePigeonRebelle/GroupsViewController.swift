@@ -55,17 +55,12 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         let tabBarController = storyboard.instantiateViewController(withIdentifier: "GroupTabVC") as! GroupTabBarController
         
         tabBarController.groupSelected.title = group.name
-        
+        tabBarController.group = group
         if let viewControllers = tabBarController.viewControllers,
             let groupExpensesController = viewControllers.first as? GroupExpensesViewController {
             groupExpensesController.groupSelected = group
-        }
-            let groupDebtsController = tabBarController.viewControllers
-        
-        
+        }        
         navigationController?.pushViewController(tabBarController, animated: true)
-        
-        
     }
     
     
