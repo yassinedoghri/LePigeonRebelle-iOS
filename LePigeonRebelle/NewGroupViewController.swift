@@ -9,10 +9,24 @@
 import UIKit
 import CoreData
 import SkyFloatingLabelTextField
+import AvatarImageView
 
 
 class NewGroupViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, ModalViewControllerDelegate {
     
+    struct DataSource: AvatarImageViewDataSource {
+        var name: String
+        var avatar: UIImage?
+        
+        init(userName: String) {
+            name = DataSource.setUserName(userName: userName)
+        }
+        
+        static func setUserName(userName: String) -> String {
+            let name = userName
+            return name
+        }
+    }
     
     @IBOutlet weak var saveGroup: UIBarButtonItem!
     @IBOutlet weak var cancel: UIBarButtonItem!
@@ -46,24 +60,18 @@ class NewGroupViewController: UIViewController, UITableViewDataSource, UITableVi
         type.textAlignment = .center
         type.placeholder = "Select type"
         
-        print(userList.count)
     }
     
     func reload() {
         membersList.reloadData()
-        print("Data reloaded", userList.count)
     }
     
     func sendValue(value: [User]) {
         userList = value
-        for user in userList as [User] {
-            print(user.name)
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         membersList.reloadData()
-        print(userList.count)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -72,9 +80,6 @@ class NewGroupViewController: UIViewController, UITableViewDataSource, UITableVi
             viewController.userList = userList
             viewController.delegate = self
         }
-//        if let viewController = segue.destination as? GroupTabBarController {
-//          viewController
-//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -90,6 +95,8 @@ class NewGroupViewController: UIViewController, UITableViewDataSource, UITableVi
         } else {
             cell.memberName.text = "Me"
         }
+        cell.avatarImageView.dataSource = DataSource(userName: user.name!)
+        
         return cell
     }
     

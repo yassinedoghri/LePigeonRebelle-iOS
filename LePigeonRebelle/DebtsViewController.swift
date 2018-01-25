@@ -23,7 +23,6 @@ class DebtsViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Do any additional setup after loading the view.
         self.getData()
         self.listDebts()
-        //self.debt.text = groupSelected.name
         debtsListView.dataSource = self
         debtsListView.delegate = self
         
@@ -32,7 +31,6 @@ class DebtsViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         self.getData()
         self.listDebts()
-        print(debtsList.count)
         debtsListView.reloadData()
     }
     
@@ -51,23 +49,11 @@ class DebtsViewController: UIViewController, UITableViewDataSource, UITableViewD
         for group in groups {
             for expense in group.expenses?.allObjects as! [Expense] {
                 for expenseDebt in expense.debts?.allObjects as! [Debt] {
-                    print(expenseDebt.amount)
                     debtsList.append(expenseDebt)
                 }
             }
         }
-        
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.debtsList.count
@@ -86,21 +72,6 @@ class DebtsViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //        let expense = groupSelected.expenses?.allObjects[indexPath.row]
-        //
-        //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //        let tabBarController = storyboard.instantiateViewController(withIdentifier: "GroupTabVC") as! GroupTabBarController
-        //
-        //
-        //        if let viewControllers = tabBarController.viewControllers,
-        //            let groupExpensesController = viewControllers.first as? GroupExpensesViewController {
-        //            groupExpensesController.groupSelected = groupSelected
-        //        }
-        //
-        //
-        //        navigationController?.pushViewController(tabBarController, animated: true)
-        //        
-        //        
     }
 
 }

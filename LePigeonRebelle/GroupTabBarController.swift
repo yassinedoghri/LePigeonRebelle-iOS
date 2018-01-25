@@ -18,7 +18,6 @@ class GroupTabBarController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         self.delegate = self
     }
 
@@ -28,15 +27,11 @@ class GroupTabBarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     @IBAction func newExpense(_ sender: UIBarButtonItem) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let newExpenseController = storyboard.instantiateViewController(withIdentifier: "NewExpenseVC") as! NewExpenseViewController
-//        
-//        if viewControllers.
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? NewExpenseViewController {
-            print("Bonjour", group.name)
             viewController.groupSelected = group
         }
     }
@@ -45,23 +40,10 @@ class GroupTabBarController: UITabBarController, UITabBarControllerDelegate {
                           didSelect viewController: UIViewController){
         if (viewController.isKind(of: GroupExpensesViewController.classForCoder())){
             let groupExpenses = viewController as! GroupExpensesViewController
-            print("Expenses", groupExpenses.groupSelected.name)
         }
         if (viewController.isKind(of: GroupDebtsViewController.classForCoder())){
             let groupDebts = viewController as! GroupDebtsViewController
-            print("Debts", groupDebts.groupSelected.name)
         }
-        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

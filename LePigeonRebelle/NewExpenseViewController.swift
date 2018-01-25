@@ -8,9 +8,25 @@
 
 import UIKit
 import CoreData
+import AvatarImageView
+import DropDown
 
 class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    struct DataSource: AvatarImageViewDataSource {
+        var name: String
+        var avatar: UIImage?
+        
+        init(userName: String) {
+            name = DataSource.setUserName(userName: userName)
+        }
+        
+        static func setUserName(userName: String) -> String {
+            let name = userName
+            return name
+        }
+    }
+    
     @IBOutlet weak var dateField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
     @IBOutlet weak var amountField: UITextField!
@@ -18,11 +34,15 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
     @IBOutlet weak var expenseTypeField: UITextField!
     @IBOutlet weak var commentField: UITextField!
     @IBOutlet weak var groupLabel: UILabel!
-    
+    @IBOutlet weak var expenceCategoryButton: UIButton!
+    @IBOutlet weak var payedForButton: UIButton!
+    @IBOutlet weak var userOwingListView: UITableView!
+
     // date picker
     let datePicker = UIDatePicker()
     
     var types: [ExpenseType] = []
+    var categories: [ExpenseCategory] = []
     var users: [User] = []
     var userGroupList: [UserGroup] = []
     var userOwingList: [User] = []
@@ -32,6 +52,16 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
     let categoryPickerView = UIPickerView()
     let groupPickerView = UIPickerView()
     let payedByPickerView = UIPickerView()
+    
+    let chooseExpenseCategoryDropDown = DropDown()
+    let choosePayedForDropDown = DropDown()
+    
+    lazy var dropDowns: [DropDown] = {
+        return [
+            self.chooseExpenseCategoryDropDown,
+            self.choosePayedForDropDown
+        ]
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,13 +73,15 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         self.expenseTypeField.delegate = self
         self.commentField.delegate = self
         
+        let image = UIImage(named: "ec_other1x")
+        expenceCategoryButton.setImage(image?.withRenderingMode(.alwaysOriginal), for: .normal)
         self.groupLabel.text = groupSelected.name
 
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        
         //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
         //tap.cancelsTouchesInView = false
-        
         view.addGestureRecognizer(tap)
         
         self.createDatePicker()
@@ -57,6 +89,7 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         self.loadTypes()
         self.loadUserGroupList()
         self.loadUsers()
+        self.loadCategories()
         
         categoryPickerView.delegate = self
         categoryPickerView.dataSource = self
@@ -71,6 +104,14 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         
         payedByField.inputView = payedByPickerView
         
+        setupDropDowns()
+        dropDowns.forEach { $0.dismissMode = .onTap }
+        dropDowns.forEach { $0.direction = .bottom }
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        userOwingListView.reloadData()
     }
     
     func dismissKeyboard() {
@@ -78,9 +119,14 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         self.view.endEditing(true)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func chooseExpenseCategroy(_ sender: UIButton) {
+        chooseExpenseCategoryDropDown.show()
+    }
+    
+    
+    @IBAction func choosePayedFor(_ sender: UIButton) {
+        choosePayedForDropDown.show()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -97,6 +143,17 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
             print("Error: \(error)")
         }
 
+    }
+    
+    func loadCategories() {
+        let fetchRequest:NSFetchRequest<ExpenseCategory> = ExpenseCategory.fetchRequest()
+        
+        do {
+            categories = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
+        } catch {
+            print("Error: \(error)")
+        }
+        
     }
     
     func loadUserGroupList() {
@@ -150,15 +207,17 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
         if (pickerView == categoryPickerView) {
             expenseTypeField.text = types[row].wording
             expenseTypeField.resignFirstResponder()
         }
         if (pickerView == payedByPickerView) {
-            payedByField.text = users[row].name!
-            userPaying = users[row]
+            payedByField.text = userGroupList[row].user?.name!
+            userPaying = userGroupList[row].user
             payedByField.resignFirstResponder()
         }
+        
     }
     
     func createDatePicker() {
@@ -212,7 +271,7 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         
         let formatter = NumberFormatter()
         formatter.generatesDecimalNumbers = true
-        let amount = formatter.number(from: amountField.text!)
+        var amount = formatter.number(from: amountField.text!)
         for user in userOwingList {
             let debt:Debt = NSEntityDescription.insertNewObject(forEntityName: "Debt", into: DataBaseController.persistentContainer.viewContext) as! Debt
             debt.amount = amount as! NSDecimalNumber
@@ -221,7 +280,6 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
             expense.addToDebts(debt)
         }
         
-        
         if let type = types.first(where: { $0.wording == self.expenseTypeField.text! }) {
             expense.type = type
         }
@@ -229,6 +287,115 @@ class NewExpenseViewController: UIViewController, UITextFieldDelegate, UIPickerV
         DataBaseController.saveContext()
 
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.userOwingList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MemberCell", for: indexPath) as! MemberTableViewCell
+        
+        let friend = userOwingList[indexPath.row]
+        cell.memberName.text = friend.name
+        cell.avatarImageView.dataSource = DataSource(userName: friend.name!)
+
+        return cell
+    }
+    
+    func setExpenseCategoryImage(expenseCategory: String) -> String {
+        let imageName = "ec_" + expenseCategory.lowercased() + "1x"
+        return imageName
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+    }
+
+    //MARK: - Setup
+    
+    func setupDropDowns() {
+        setupChoosePayedForDropDown()
+        setupExpenseCategoryDropDown()
+    }
+    
+    func setupChoosePayedForDropDown() {
+        choosePayedForDropDown.anchorView = payedForButton
+        
+        // Will set a custom with instead of anchor view width
+        //		dropDown.width = 100
+        
+        // By default, the dropdown will have its origin on the top left corner of its anchor view
+        // So it will come over the anchor view and hide it completely
+        // If you want to have the dropdown underneath your anchor view, you can do this:
+        choosePayedForDropDown.bottomOffset = CGPoint(x: 0, y: payedForButton.bounds.height)
+        
+        // You can also use localizationKeysDataSource instead. Check the docs.
+        var usersName: [String] = []
+        var users: [User] = []
+        for userGroup in userGroupList {
+            usersName.append((userGroup.user?.name!)!)
+            users.append(userGroup.user!)
+        }
+        choosePayedForDropDown.dataSource = usersName
+        
+        // Action triggered on selection
+        choosePayedForDropDown.selectionAction = { [weak self] (index, item) in
+            self?.userOwingList.append((self?.userGroupList[index].user!)!)
+            self?.userOwingListView.reloadData()
+        }
+        
+//        choosePayedForDropDown.multiSelectionAction = { [weak self] (indices, items) in
+//            print("Muti selection action called with: \(items)")
+//            self?.userOwingList.append(users.filter {$0.name = items[indices.]})
+//                    self?.userOwingListView.reloadData()
+//                    print(self?.userOwingList[items.index(of: item)!])
+//                }
+//        }
+        
+        // Action triggered on dropdown cancelation (hide)
+        //		dropDown.cancelAction = { [unowned self] in
+        //			// You could for example deselect the selected item
+        //			self.dropDown.deselectRowAtIndexPath(self.dropDown.indexForSelectedRow)
+        //			self.actionButton.setTitle("Canceled", forState: .Normal)
+        //		}
+        
+        // You can manually select a row if needed
+        //		dropDown.selectRowAtIndex(3)
+    }
+    
+    func setupExpenseCategoryDropDown() {
+        chooseExpenseCategoryDropDown.anchorView = expenceCategoryButton
+        
+        // By default, the dropdown will have its origin on the top left corner of its anchor view
+        // So it will come over the anchor view and hide it completely
+        // If you want to have the dropdown underneath your anchor view, you can do this:
+        chooseExpenseCategoryDropDown.bottomOffset = CGPoint(x: 0, y: expenceCategoryButton.bounds.height)
+        
+        var categoryExpense: [String] = []
+        for eC in categories {
+            categoryExpense.append(eC.wording!)
+        }
+        
+        // You can also use localizationKeysDataSource instead. Check the docs.
+        chooseExpenseCategoryDropDown.dataSource = categoryExpense
+        
+        /*** IMPORTANT PART FOR CUSTOM CELLS ***/
+        chooseExpenseCategoryDropDown.cellNib = UINib(nibName: "ExpenseCategoryCell", bundle: nil)
+        
+        chooseExpenseCategoryDropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
+            guard let cell = cell as? ExpenseCategoryCell else { return }
+            let image = UIImage(named: self.setExpenseCategoryImage(expenseCategory: item))?.withRenderingMode(.alwaysOriginal)
+            cell.imageCategory.image = image
+            // Setup your custom UI components
+        }
+        /*** END - IMPORTANT PART FOR CUSTOM CELLS ***/
+        
+        // Action triggered on selection
+        chooseExpenseCategoryDropDown.selectionAction = { [weak self] (index, item) in
+            var image = UIImage(named: (self?.setExpenseCategoryImage(expenseCategory: item))!)
+            self?.expenceCategoryButton.setImage(image?.withRenderingMode(.alwaysOriginal), for: .normal)
+        }
     }
     
     @IBAction func cancelNewExpense(_ sender: Any) {

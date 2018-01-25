@@ -28,7 +28,7 @@ class WelcomeViewController: UIViewController {
             let searchResultsCount = try DataBaseController.persistentContainer.viewContext.count(for: fetchRequest)
             if (searchResultsCount == 0) {
                 print("Saving GroupType!")
-                let groupTypes: [String] = ["Appartment/House", "Birthday", "Leisure", "Trip", "Other"]
+                let groupTypes: [String] = ["House", "Birthday", "Leisure", "Trip", "Other"]
                 for type in groupTypes {
                     let groupType:GroupType = NSEntityDescription.insertNewObject(forEntityName: entityName, into: DataBaseController.persistentContainer.viewContext) as! GroupType
                     groupType.wording = type
@@ -41,12 +41,10 @@ class WelcomeViewController: UIViewController {
                     print("\(String(describing: result.wording))")
                 }
             }
-            
         }
         catch {
             print("Error: \(error)")
         }
-        
         
         // expense Types
         let entityNameET:String = String(describing: ExpenseType.self)
@@ -69,12 +67,10 @@ class WelcomeViewController: UIViewController {
                     print("\(String(describing: result.wording))")
                 }
             }
-            
         }
         catch {
             print("Error: \(error)")
         }
-        
         
         // expense Categories
         let entityNameEC:String = String(describing: ExpenseCategory.self)
@@ -84,7 +80,7 @@ class WelcomeViewController: UIViewController {
             let searchResultsCount = try DataBaseController.persistentContainer.viewContext.count(for: fetchRequestEC)
             if (searchResultsCount == 0) {
                 print("Saving ExpenseCategory!")
-                let expenseCategories: [String] = ["Leisure", "House", "Groceries", "Public Services", "Transport", "Other"]
+                let expenseCategories: [String] = ["Leisure", "Food", "House", "Groceries", "Services", "Transport", "Other"]
                 for category in expenseCategories {
                     let expenseCategory:ExpenseCategory = NSEntityDescription.insertNewObject(forEntityName: entityNameEC, into: DataBaseController.persistentContainer.viewContext) as! ExpenseCategory
                     expenseCategory.wording = category
@@ -97,12 +93,10 @@ class WelcomeViewController: UIViewController {
                     print("\(String(describing: result.wording))")
                 }
             }
-            
         }
         catch {
             print("Error: \(error)")
         }
-
     }
 
     @IBAction func startPressed(_ sender: Any) {
@@ -112,11 +106,10 @@ class WelcomeViewController: UIViewController {
         user.name = userNameField.text!
         user.isDefaultUser = true
         DataBaseController.saveContext()
+        
         defaultUser = user
         
         UserDefaults.standard.set(true, forKey: "defaultUserCreated")
-
     }
-    
     
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AvatarImageView
 
 protocol ModalViewControllerDelegate
 {
@@ -16,7 +17,19 @@ protocol ModalViewControllerDelegate
 
 class AddMemberViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    
+    struct DataSource: AvatarImageViewDataSource {
+        var name: String
+        var avatar: UIImage?
+        
+        init(userName: String) {
+            name = DataSource.setUserName(userName: userName)
+        }
+        
+        static func setUserName(userName: String) -> String {
+            let name = userName
+            return name
+        }
+    }
 
     @IBOutlet weak var MembersList: UITableView!
     @IBOutlet weak var newMemberNameField: UITextField!
@@ -33,19 +46,17 @@ class AddMemberViewController: UIViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
 
         self.loadUsers()
 
-
         MembersList.delegate = self
         MembersList.dataSource = self
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         MembersList.reloadData()
     }
+    
     @IBAction func newMember(_ sender: UIButton) {
     }
     
@@ -54,14 +65,12 @@ class AddMemberViewController: UIViewController, UITableViewDataSource, UITableV
         
         do {
             users = try DataBaseController.persistentContainer.viewContext.fetch(fetchRequest)
-            print("Count", users.count)
             for user in userList as [User] {
                 users = users.filter {$0.name != user.name}
             }
         } catch {
             print("Error: \(error)")
         }
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,6 +82,7 @@ class AddMemberViewController: UIViewController, UITableViewDataSource, UITableV
         
         let user = users[indexPath.row]
             cell.memberName.text = user.name
+        cell.avatarImageView.dataSource = DataSource(userName: user.name!)
         
         return cell
     }
@@ -95,16 +105,15 @@ class AddMemberViewController: UIViewController, UITableViewDataSource, UITableV
 
     @IBAction func okButton(_ sender: UIButton) {
         if ((newMemberNameField.text) != nil) {
-            print(newMemberNameField.text)
             let newUser:User = NSEntityDescription.insertNewObject(forEntityName: "User", into: DataBaseController.persistentContainer.viewContext) as! User
             newUser.name = newMemberNameField.text
             DataBaseController.saveContext()
+            
             newMemberNameField.isHidden = true
             okButton.isHidden = true
             
             users.append(newUser)
             MembersList.reloadData()
-
         }
         
     }
@@ -117,7 +126,6 @@ class AddMemberViewController: UIViewController, UITableViewDataSource, UITableV
             delegate?.sendValue(value: userList)
             print(userList.count)
         NotificationCenter.default.post(name: Notification.Name("load"), object: nil)
-        print("Number of users:", userList.count)
 
         dismiss(animated: true, completion: nil)
     }

@@ -18,6 +18,7 @@ class GroupTableViewCell: UITableViewCell {
     
     @IBOutlet var groupName: UILabel!
     @IBOutlet var budget: UILabel!
+    @IBOutlet weak var groupTypeImage: UIImageView!
     
     // MARK: - Initialization
     

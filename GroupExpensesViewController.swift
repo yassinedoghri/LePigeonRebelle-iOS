@@ -23,23 +23,11 @@ class GroupExpensesViewController: UIViewController, UITableViewDataSource, UITa
         expensesListView.dataSource = self
         expensesListView.delegate = self
         
-        print("Expenses: ", groupSelected.name)
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            let viewController = segue.destination as? NewExpenseViewController
-//                viewController?.groupLabel.text = groupSelected.name
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        expensesListView.reloadData()
     }
-    */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (groupSelected.expenses?.count)!
@@ -63,25 +51,6 @@ class GroupExpensesViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        let expense = groupSelected.expenses?.allObjects[indexPath.row]
-//        
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let tabBarController = storyboard.instantiateViewController(withIdentifier: "GroupTabVC") as! GroupTabBarController
-//        
-//        
-//        if let viewControllers = tabBarController.viewControllers,
-//            let groupExpensesController = viewControllers.first as? GroupExpensesViewController {
-//            groupExpensesController.groupSelected = group
-//        }
-//        let groupDebtsController = tabBarController.viewControllers
-//        
-//        
-//        navigationController?.pushViewController(tabBarController, animated: true)
-        
     }
-    
-    
-
-
 
 }

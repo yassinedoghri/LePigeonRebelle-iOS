@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import AvatarImageView
+import SkyFloatingLabelTextField
 
 class FriendsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -27,6 +28,10 @@ class FriendsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     @IBOutlet weak var friendsListView: UITableView!
+    @IBOutlet weak var addFriend: UIBarButtonItem!
+    @IBOutlet weak var friendNameField: SkyFloatingLabelTextField!
+    @IBOutlet weak var okButton: UIButton!
+    
     
     var users: [User] = []
     
@@ -37,6 +42,25 @@ class FriendsViewController: UIViewController, UITableViewDataSource, UITableVie
         friendsListView.dataSource = self
         friendsListView.delegate = self
         
+    }
+    
+    @IBAction func addMember(_ sender: UIBarButtonItem) {
+        friendNameField.isHidden = false
+        okButton.isHidden = false
+    }
+    
+    @IBAction func okButton(_ sender: UIButton) {
+        if (friendNameField.text != nil) {
+            let newUser:User = NSEntityDescription.insertNewObject(forEntityName: "User", into: DataBaseController.persistentContainer.viewContext) as! User
+            newUser.name = friendNameField.text
+            DataBaseController.saveContext()
+            
+            friendNameField.isHidden = true
+            okButton.isHidden = true
+            
+            users.append(newUser)
+            friendsListView.reloadData()
+        }
     }
     
     func getData() {

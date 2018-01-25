@@ -34,6 +34,8 @@
 		15B0FA3C2006CAE20061CA6F /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FA3B2006CAE20061CA6F /* GroupTableViewCell.swift */; };
 		15BB9688201158EC0069A148 /* AddMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB9687201158EC0069A148 /* AddMemberView.swift */; };
 		15BB968A20115AF90069A148 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB968920115AF90069A148 /* AddMemberViewController.swift */; };
+		15C9D75C2016FE4400A3B0EC /* ExpenseCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C9D75A2016FE4400A3B0EC /* ExpenseCategoryCell.swift */; };
+		15C9D75D2016FE4400A3B0EC /* ExpenseCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C9D75B2016FE4400A3B0EC /* ExpenseCategoryCell.xib */; };
 		429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A8F200136FD007A5108 /* WelcomeViewController.swift */; };
 		429B9A9220015453007A5108 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B9A9120015453007A5108 /* NewExpenseViewController.swift */; };
 		8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822C4CB1FFAC8A900EF325E /* AppDelegate.swift */; };
@@ -89,6 +91,8 @@
 		15B0FA3B2006CAE20061CA6F /* GroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		15BB9687201158EC0069A148 /* AddMemberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberView.swift; sourceTree = "<group>"; };
 		15BB968920115AF90069A148 /* AddMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
+		15C9D75A2016FE4400A3B0EC /* ExpenseCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryCell.swift; sourceTree = "<group>"; };
+		15C9D75B2016FE4400A3B0EC /* ExpenseCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpenseCategoryCell.xib; sourceTree = "<group>"; };
 		429B9A8F200136FD007A5108 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		429B9A9120015453007A5108 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
 		8822C4C81FFAC8A900EF325E /* LePigeonRebelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LePigeonRebelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +194,8 @@
 				157E6E752012329B00798AAD /* MainTabBarController.swift */,
 				15BB968920115AF90069A148 /* AddMemberViewController.swift */,
 				15BB9687201158EC0069A148 /* AddMemberView.swift */,
+				15C9D75A2016FE4400A3B0EC /* ExpenseCategoryCell.swift */,
+				15C9D75B2016FE4400A3B0EC /* ExpenseCategoryCell.xib */,
 				153DC320200B8F4900E7D0EB /* DebtTableViewCell.swift */,
 				153DC31E2009308800E7D0EB /* MemberTableViewCell.swift */,
 				153DC31C200927A300E7D0EB /* ExpenseTableViewCell.swift */,
@@ -318,6 +324,7 @@
 				153B2638201621FA00F06D06 /* Roboto-Medium.ttf in Resources */,
 				153B263A201621FA00F06D06 /* Roboto-Regular.ttf in Resources */,
 				153B2631201621FA00F06D06 /* Roboto-Black.ttf in Resources */,
+				15C9D75D2016FE4400A3B0EC /* ExpenseCategoryCell.xib in Resources */,
 				153B2636201621FA00F06D06 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,11 +340,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LePigeonRebelle/Pods-LePigeonRebelle-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AvatarImageView/AvatarImageView.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AvatarImageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +412,7 @@
 				153DC31A2008F2AE00E7D0EB /* Group+CoreDataClass.swift in Sources */,
 				8822C4CC1FFAC8A900EF325E /* AppDelegate.swift in Sources */,
 				157E6E762012329B00798AAD /* MainTabBarController.swift in Sources */,
+				15C9D75C2016FE4400A3B0EC /* ExpenseCategoryCell.swift in Sources */,
 				429B9A90200136FD007A5108 /* WelcomeViewController.swift in Sources */,
 				885C868320012A2300B62387 /* GroupType+CoreDataProperties.swift in Sources */,
 				885C868E20012A2300B62387 /* User+CoreDataClass.swift in Sources */,

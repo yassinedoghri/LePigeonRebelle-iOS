@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import DropDown
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootViewController = storyboard.instantiateViewController(withIdentifier: UserDefaults.standard.bool(forKey: "defaultUserCreated") ? "MainViewControllerID" : "WelcomeViewControllerID")
         
         window?.rootViewController = rootViewController
+        
+        DropDown.startListeningToKeyboard()
 
         return true
     }

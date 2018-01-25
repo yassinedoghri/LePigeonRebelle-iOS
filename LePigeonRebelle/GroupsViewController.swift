@@ -15,6 +15,7 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var groupsListView: UITableView!
     
     var groups: [Group] = []
+    var imageName: String = "gt_"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,11 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         groupsListView.reloadData()
     }
     
+    func setGroupImage(groupType: String) -> String {
+        imageName = imageName + groupType.lowercased() + "1x"
+        return imageName
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return groups.count
     }
@@ -41,8 +47,10 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         if (group.budget != 0){
             cell.budget.text = String(describing: group.budget!) + "€"
         } else {
-            cell.budget.text = "No budget!"
+            cell.budget.text = ""
         }
+        let image = UIImage(named: setGroupImage(groupType: group.type.wording!))?.withRenderingMode(.alwaysOriginal)
+        cell.groupTypeImage.image = image
         
         return cell
     }
@@ -62,7 +70,6 @@ class GroupsViewController: UIViewController, UITableViewDataSource, UITableView
         }        
         navigationController?.pushViewController(tabBarController, animated: true)
     }
-    
     
     func getData() {
         let context = DataBaseController.persistentContainer.viewContext

@@ -8,4 +8,5 @@ target 'LePigeonRebelle' do
   # Pods for LePigeonRebelle
 pod 'SkyFloatingLabelTextField', '~> 3.0'
 pod "AvatarImageView", '2.0.0'
+pod 'DropDown'
 end

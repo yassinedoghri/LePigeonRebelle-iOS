@@ -7,90 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18BBEB097DA24DE285386F703D589DA5 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6C0C372D2F17188A5AB1EF110B9663 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		02CAE638EF1CEEBD6F5740498F9CA3F8 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190201886142D242B67C409AD6F8E8CB /* DropDown.swift */; };
+		098F056D90AF9CD3FD60D8A81DF043B6 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FB7DBEF8594AF82CA74D43A653383 /* DropDownCell.swift */; };
+		0A58B1BDDFA29B6F501A3657FF7E2BA2 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE074F757065590CA462ECCD54297B4E /* SkyFloatingLabelTextField.swift */; };
 		2747422AAC5F5AA95A3F14085F3BE7EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4E2783F5C9F93E455FA70944DE405599 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF8A06C691481210A3ED6E28E272C3B /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5183026C6A3110C5BA7C287806E3CB01 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01229A2F7C6D80ED987F029AD42FFC /* UITextField+fixCaretPosition.swift */; };
-		5A10DF71A04A189EE3FC9A631683402A /* Pods-LePigeonRebelle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D56AA5AD32F86C3C1DC1BE063C3129 /* Pods-LePigeonRebelle-dummy.m */; };
-		61EE35C1E8B991585D36E43673AE4CCE /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F3A321A38584AF19DAA21DCA69192 /* SkyFloatingLabelTextField.swift */; };
-		6829924410F432BF6D8473A751CC6D6C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E6081BBE31FF78A28F10F1FCD5763 /* AvatarImageView.swift */; };
-		6F0B0EC4F704C707FB6D589B5A10766C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		75E417F776E57AE01422F4924EC5EE89 /* AvatarImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8212F0D6F7CC0443780111D19CA264A /* AvatarImageView-dummy.m */; };
-		7AC62EE704BC2EB38E1552DBE42846E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8E14BFC3DD10DD3FECBBFBA368AF103E /* AvatarImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD9F89DB911E2A1DCD8C789EA97CE0 /* AvatarImageViewConfiguration.swift */; };
-		B2FD99FFFE9D834712DB997DD4C3213F /* Pods-LePigeonRebelle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E917B739E3D9ED4457EB40F03DB86D /* Pods-LePigeonRebelle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C09608A69D0D178ADE7E63AFF08C26C9 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D78D6C6BE88C272BB51C212389758CA /* SkyFloatingLabelTextField-dummy.m */; };
-		CAFA1E36F5B6B358193FA21194E97E7B /* ColorCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5966D1E3B77F60CD46A296185CA192 /* ColorCache.swift */; };
-		FF061E9E283C07752486083017BCA9E2 /* AvatarImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFDBB7729902DCB9F6ACA7D05AD3091 /* AvatarImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E7E74DF0C455B0BC43BFDD1D0163E64 /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A11565B2CC2B2AB6492F11D1D3EE64F /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9CD6F441E6B30601549781F5DB2D12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		37C293AEA575D6E5186739D1B07805F2 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B5C143764AE87DF8B2C3C407641C /* DropDownCell.xib */; };
+		442ADADA3215E1E5CA1557E708D4228C /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071C0CC77CB5F07EAF229787AD2F6AAD /* DropDown+Appearance.swift */; };
+		4BAE5DFD926FD87656DA3E56BC7B2A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		54A5C4B1EAD012BD8E8B0A1D76F002A0 /* Pods-LePigeonRebelle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E917B739E3D9ED4457EB40F03DB86D /* Pods-LePigeonRebelle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6829924410F432BF6D8473A751CC6D6C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74DCDC8E0C55166F15970E57E6F0EB /* AvatarImageView.swift */; };
+		75E417F776E57AE01422F4924EC5EE89 /* AvatarImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 639260CD730F3A982D48D5678349BFE5 /* AvatarImageView-dummy.m */; };
+		8E14BFC3DD10DD3FECBBFBA368AF103E /* AvatarImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA7404C2384D46B3BEF52954432C3A /* AvatarImageViewConfiguration.swift */; };
+		9A71339FF07B46DA5C97759B2014D3F4 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2DAB046B4155A2D794CAC975283037 /* SkyFloatingLabelTextField-dummy.m */; };
+		9D0221E27E37CDA9DF26DD3CFA56D75B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F924B52346B7E7533B1022DA0C66F801 /* DPDKeyboardListener.swift */; };
+		A401CF18D15DF246F40FAC4E8F06CBC7 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379E383CFE4600602F691F89C942D05 /* DPDUIView+Extension.swift */; };
+		A812E7811821F66B3B7499F6F1B513BA /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838CE54BCC4229324A25A555C66781A0 /* DPDConstants.swift */; };
+		AC6581D9387744158B44BE683403C3BC /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4DBA46808A3F409D2A72B6E4DB69E9 /* DropDown-dummy.m */; };
+		CAFA1E36F5B6B358193FA21194E97E7B /* ColorCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E49413513D69C856FC3B20301B80FC4 /* ColorCache.swift */; };
+		D0DCC0CC58F4427DDC4C6BA4D5BA0B0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E1354B29728E9BB486F760B20648DEEA /* Pods-LePigeonRebelle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D56AA5AD32F86C3C1DC1BE063C3129 /* Pods-LePigeonRebelle-dummy.m */; };
+		E18D7FE8212D376E9306B86C11C4E6F5 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33273032FE064E26CA611F5B0B77FD07 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA22E72EE272044D2A0D3825ADB691F6 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4121B6AA7386E6008FCA548A6F09122 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		FD8F258EB8B2C93888410B2FB0576726 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08454135154FEFC46B4D692FF3DF5CF /* UITextField+fixCaretPosition.swift */; };
+		FF061E9E283C07752486083017BCA9E2 /* AvatarImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E031685403B451F89BE28C0E7D8482 /* AvatarImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		221810F4D8559AEA80CB359D15C5EDE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AE41C10EE8BE4D0C2D24CCDED6D2A8A0;
-			remoteInfo = SkyFloatingLabelTextField;
-		};
-		6EF30FEB71480A0687D0D2C0E2364A23 /* PBXContainerItemProxy */ = {
+		3D3B67DF8EB40CFDE0003B40F80C0618 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BC6A2806576FA0E8E5BF240ADEA645A9;
 			remoteInfo = AvatarImageView;
 		};
+		42B426C988EE5F5FFC54DCA271260D5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5168099F2EBFC99A707C03C9EADE01A5;
+			remoteInfo = DropDown;
+		};
+		48329919F854DEC0C0B675A5103943D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D09D1BD8CD9FC878CC72B24365956ED4;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05E031685403B451F89BE28C0E7D8482 /* AvatarImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvatarImageView-umbrella.h"; sourceTree = "<group>"; };
+		06842516878787B08E736286AE8B644C /* AvatarImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AvatarImageView.modulemap; sourceTree = "<group>"; };
+		071C0CC77CB5F07EAF229787AD2F6AAD /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
 		133918A86BAF9C183033BA4EEF1C4E67 /* Pods-LePigeonRebelle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LePigeonRebelle.debug.xcconfig"; sourceTree = "<group>"; };
 		16A065E023F1420353A0B4FF8D39E824 /* Pods-LePigeonRebelle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LePigeonRebelle.release.xcconfig"; sourceTree = "<group>"; };
-		1EFDBB7729902DCB9F6ACA7D05AD3091 /* AvatarImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvatarImageView-umbrella.h"; sourceTree = "<group>"; };
-		3A01229A2F7C6D80ED987F029AD42FFC /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
-		3FC91D3CA5653975028EB63E6495A7B6 /* AvatarImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AvatarImageView.modulemap; sourceTree = "<group>"; };
-		423E6081BBE31FF78A28F10F1FCD5763 /* AvatarImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarImageView.swift; path = AvatarImageView/AvatarImageView.swift; sourceTree = "<group>"; };
+		190201886142D242B67C409AD6F8E8CB /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		1C88B5C143764AE87DF8B2C3C407641C /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		1D62CCF4919575BDA20415FBFFB9EBC8 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		1E785EB6D167C4DF7AB4CA231563AFBE /* AvatarImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AvatarImageView.xcconfig; sourceTree = "<group>"; };
+		22B36C0B314FFFE9DC1F4C2304E87B36 /* AvatarImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AvatarImageView.framework; path = AvatarImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4DBA46808A3F409D2A72B6E4DB69E9 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		2D6F74E614897B13EB25EAB2AD9FDE99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33273032FE064E26CA611F5B0B77FD07 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		37AD7660C0087F9ED4453D0D8D2A6180 /* AvatarImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvatarImageView-prefix.pch"; sourceTree = "<group>"; };
+		3A74DCDC8E0C55166F15970E57E6F0EB /* AvatarImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarImageView.swift; path = AvatarImageView/AvatarImageView.swift; sourceTree = "<group>"; };
+		439366C1D73D1569A94F3DA26C96ADB0 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D15067B2AA2F481EEC4CB7E992AD02 /* Pods-LePigeonRebelle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LePigeonRebelle-acknowledgements.plist"; sourceTree = "<group>"; };
-		4DD04EE89DA5344B914E7382787B8E0B /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FBA9606B79860B96D69AA22E6895934 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		4A11565B2CC2B2AB6492F11D1D3EE64F /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		4F1FB7DBEF8594AF82CA74D43A653383 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		52FA1F5F8361A47467EE66C4C076734E /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639260CD730F3A982D48D5678349BFE5 /* AvatarImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AvatarImageView-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6D415E49A4CB06C56FD6A12F5CDE7E5D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D54FBD8861B622B04F104ADC49BF072 /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
 		6D84070A2991504D04AF997D5DEC0C15 /* Pods-LePigeonRebelle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LePigeonRebelle-frameworks.sh"; sourceTree = "<group>"; };
+		6FDA7404C2384D46B3BEF52954432C3A /* AvatarImageViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarImageViewConfiguration.swift; path = AvatarImageView/AvatarImageViewConfiguration.swift; sourceTree = "<group>"; };
 		75D56AA5AD32F86C3C1DC1BE063C3129 /* Pods-LePigeonRebelle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LePigeonRebelle-dummy.m"; sourceTree = "<group>"; };
-		7FBD9F89DB911E2A1DCD8C789EA97CE0 /* AvatarImageViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarImageViewConfiguration.swift; path = AvatarImageView/AvatarImageViewConfiguration.swift; sourceTree = "<group>"; };
-		8AE35D80B005935085DE6D7A9DB60DCD /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		7BA54D17C4B92602D08D2D4F9BB4CE18 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		7D2DAB046B4155A2D794CAC975283037 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		838CE54BCC4229324A25A555C66781A0 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		8E49413513D69C856FC3B20301B80FC4 /* ColorCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCache.swift; path = AvatarImageView/ColorCache.swift; sourceTree = "<group>"; };
 		9041F28BEEB3AE70F291497B6CDF3893 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A1310998C178DD639F78C6D6CAA05E9 /* Pods_LePigeonRebelle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LePigeonRebelle.framework; path = "Pods-LePigeonRebelle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A8C0D23E8E7BF9D414EC939C3B8D0E1 /* AvatarImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AvatarImageView.xcconfig; sourceTree = "<group>"; };
-		9BE17C6C2A3493AFBB4835529E210D01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D78D6C6BE88C272BB51C212389758CA /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
-		9FA390AC6FCA01E4C5BDF3B07175DA23 /* AvatarImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AvatarImageView.framework; path = AvatarImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B158AA5761CCFE898661976BF604AA77 /* AvatarImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvatarImageView-prefix.pch"; sourceTree = "<group>"; };
-		BEB13B956239ECAF68D5E19B2E384455 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08454135154FEFC46B4D692FF3DF5CF /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		A2871103DB03712EA597EB1AA1889BC2 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		A379E383CFE4600602F691F89C942D05 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		B4121B6AA7386E6008FCA548A6F09122 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
 		CBD03F54C6148750F2181A263D9A6E03 /* Pods-LePigeonRebelle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LePigeonRebelle-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E33F3A321A38584AF19DAA21DCA69192 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		D99CE28AE02F0A633F87F9AC86D40FF3 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
 		E4ECEB39E1FF92BD73C939004E0D2554 /* Pods-LePigeonRebelle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LePigeonRebelle.modulemap"; sourceTree = "<group>"; };
-		E8212F0D6F7CC0443780111D19CA264A /* AvatarImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AvatarImageView-dummy.m"; sourceTree = "<group>"; };
-		EA5966D1E3B77F60CD46A296185CA192 /* ColorCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCache.swift; path = AvatarImageView/ColorCache.swift; sourceTree = "<group>"; };
-		EEF8A06C691481210A3ED6E28E272C3B /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		E59FC50163412E80A77AE70953568AF0 /* Pods_LePigeonRebelle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LePigeonRebelle.framework; path = "Pods-LePigeonRebelle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E937DEF65F59E70E8E74A103A1A52D8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD18B6062F1F320F48DC6653FF0A1D9 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DropDown.modulemap; sourceTree = "<group>"; };
 		F4E917B739E3D9ED4457EB40F03DB86D /* Pods-LePigeonRebelle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LePigeonRebelle-umbrella.h"; sourceTree = "<group>"; };
-		F876FA3742AD4222D18174008AD23375 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		F924B52346B7E7533B1022DA0C66F801 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
 		FBAD05C7A44F490C1F154DE4C825DF37 /* Pods-LePigeonRebelle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LePigeonRebelle-resources.sh"; sourceTree = "<group>"; };
-		FC6C0C372D2F17188A5AB1EF110B9663 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		FE074F757065590CA462ECCD54297B4E /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		33D58066C87B61D2466762720AEA280D /* Frameworks */ = {
+		3FE28484C632D94C9779E4E74AE0BD29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC62EE704BC2EB38E1552DBE42846E8 /* Foundation.framework in Frameworks */,
+				2E9CD6F441E6B30601549781F5DB2D12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B429EE973097615F61F7C994D2D1FB6 /* Frameworks */ = {
+		6E400CD1C19293982002D8EE9C9ECDF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F0B0EC4F704C707FB6D589B5A10766C /* Foundation.framework in Frameworks */,
+				D0DCC0CC58F4427DDC4C6BA4D5BA0B0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71EF98E59590825A92A248501740F270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAE5DFD926FD87656DA3E56BC7B2A6E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,51 +144,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		304EAA3AAAFEB2C58A041615742498F3 /* AvatarImageView */ = {
+		0DC9C1F620790207F4224F8C36FC7EF0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				423E6081BBE31FF78A28F10F1FCD5763 /* AvatarImageView.swift */,
-				7FBD9F89DB911E2A1DCD8C789EA97CE0 /* AvatarImageViewConfiguration.swift */,
-				EA5966D1E3B77F60CD46A296185CA192 /* ColorCache.swift */,
-				E2896EC075ADBB1749FE4D1AFC85AE6D /* Support Files */,
+				EBD18B6062F1F320F48DC6653FF0A1D9 /* DropDown.modulemap */,
+				6D54FBD8861B622B04F104ADC49BF072 /* DropDown.xcconfig */,
+				2C4DBA46808A3F409D2A72B6E4DB69E9 /* DropDown-dummy.m */,
+				A2871103DB03712EA597EB1AA1889BC2 /* DropDown-prefix.pch */,
+				4A11565B2CC2B2AB6492F11D1D3EE64F /* DropDown-umbrella.h */,
+				2D6F74E614897B13EB25EAB2AD9FDE99 /* Info.plist */,
 			);
-			name = AvatarImageView;
-			path = AvatarImageView;
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
-		359EFF6F2A23F310D81D74CD952FBCD0 /* Pods */ = {
+		3017E4642607103622F7CAFF8126A863 /* SkyFloatingLabelTextField */ = {
 			isa = PBXGroup;
 			children = (
-				304EAA3AAAFEB2C58A041615742498F3 /* AvatarImageView */,
-				3B31F7E8912B55C9F80E7F59D8F5B6D8 /* SkyFloatingLabelTextField */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3B31F7E8912B55C9F80E7F59D8F5B6D8 /* SkyFloatingLabelTextField */ = {
-			isa = PBXGroup;
-			children = (
-				E33F3A321A38584AF19DAA21DCA69192 /* SkyFloatingLabelTextField.swift */,
-				FC6C0C372D2F17188A5AB1EF110B9663 /* SkyFloatingLabelTextFieldWithIcon.swift */,
-				3A01229A2F7C6D80ED987F029AD42FFC /* UITextField+fixCaretPosition.swift */,
-				76EFD04A17C941ED7D0C89D105DD7C1F /* Support Files */,
+				FE074F757065590CA462ECCD54297B4E /* SkyFloatingLabelTextField.swift */,
+				B4121B6AA7386E6008FCA548A6F09122 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				A08454135154FEFC46B4D692FF3DF5CF /* UITextField+fixCaretPosition.swift */,
+				BB613FDBE60E68D41EEE521A67119255 /* Support Files */,
 			);
 			name = SkyFloatingLabelTextField;
 			path = SkyFloatingLabelTextField;
 			sourceTree = "<group>";
 		};
-		76EFD04A17C941ED7D0C89D105DD7C1F /* Support Files */ = {
+		3184DEBE9CF981FF93B4F325CD7B1AF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9BE17C6C2A3493AFBB4835529E210D01 /* Info.plist */,
-				8AE35D80B005935085DE6D7A9DB60DCD /* SkyFloatingLabelTextField.modulemap */,
-				5FBA9606B79860B96D69AA22E6895934 /* SkyFloatingLabelTextField.xcconfig */,
-				9D78D6C6BE88C272BB51C212389758CA /* SkyFloatingLabelTextField-dummy.m */,
-				F876FA3742AD4222D18174008AD23375 /* SkyFloatingLabelTextField-prefix.pch */,
-				EEF8A06C691481210A3ED6E28E272C3B /* SkyFloatingLabelTextField-umbrella.h */,
+				22B36C0B314FFFE9DC1F4C2304E87B36 /* AvatarImageView.framework */,
+				52FA1F5F8361A47467EE66C4C076734E /* DropDown.framework */,
+				E59FC50163412E80A77AE70953568AF0 /* Pods_LePigeonRebelle.framework */,
+				439366C1D73D1569A94F3DA26C96ADB0 /* SkyFloatingLabelTextField.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SkyFloatingLabelTextField";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		471D28A5C36B94A96703BE4DB6E98BD4 /* AvatarImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3A74DCDC8E0C55166F15970E57E6F0EB /* AvatarImageView.swift */,
+				6FDA7404C2384D46B3BEF52954432C3A /* AvatarImageViewConfiguration.swift */,
+				8E49413513D69C856FC3B20301B80FC4 /* ColorCache.swift */,
+				ACB8CA79618C1330358D91B1B9AFAC5E /* Support Files */,
+			);
+			name = AvatarImageView;
+			path = AvatarImageView;
+			sourceTree = "<group>";
+		};
+		7BADBC25BF37703F365AEF1D68FC9150 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B5C143764AE87DF8B2C3C407641C /* DropDownCell.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -157,8 +206,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				359EFF6F2A23F310D81D74CD952FBCD0 /* Pods */,
-				C2265772ECC49DF242678E3979C75D45 /* Products */,
+				B65F222674463CB1F837D6F13D69C5BD /* Pods */,
+				3184DEBE9CF981FF93B4F325CD7B1AF7 /* Products */,
 				8E6213861F586887B3AE2E0106FEA155 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -171,6 +220,44 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		ACB8CA79618C1330358D91B1B9AFAC5E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06842516878787B08E736286AE8B644C /* AvatarImageView.modulemap */,
+				1E785EB6D167C4DF7AB4CA231563AFBE /* AvatarImageView.xcconfig */,
+				639260CD730F3A982D48D5678349BFE5 /* AvatarImageView-dummy.m */,
+				37AD7660C0087F9ED4453D0D8D2A6180 /* AvatarImageView-prefix.pch */,
+				05E031685403B451F89BE28C0E7D8482 /* AvatarImageView-umbrella.h */,
+				6D415E49A4CB06C56FD6A12F5CDE7E5D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AvatarImageView";
+			sourceTree = "<group>";
+		};
+		B65F222674463CB1F837D6F13D69C5BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				471D28A5C36B94A96703BE4DB6E98BD4 /* AvatarImageView */,
+				CCFB06BC15564A594B088C4F2BEF9DC8 /* DropDown */,
+				3017E4642607103622F7CAFF8126A863 /* SkyFloatingLabelTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB613FDBE60E68D41EEE521A67119255 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E937DEF65F59E70E8E74A103A1A52D8E /* Info.plist */,
+				1D62CCF4919575BDA20415FBFFB9EBC8 /* SkyFloatingLabelTextField.modulemap */,
+				7BA54D17C4B92602D08D2D4F9BB4CE18 /* SkyFloatingLabelTextField.xcconfig */,
+				7D2DAB046B4155A2D794CAC975283037 /* SkyFloatingLabelTextField-dummy.m */,
+				D99CE28AE02F0A633F87F9AC86D40FF3 /* SkyFloatingLabelTextField-prefix.pch */,
+				33273032FE064E26CA611F5B0B77FD07 /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,14 +266,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C2265772ECC49DF242678E3979C75D45 /* Products */ = {
+		CCFB06BC15564A594B088C4F2BEF9DC8 /* DropDown */ = {
 			isa = PBXGroup;
 			children = (
-				9FA390AC6FCA01E4C5BDF3B07175DA23 /* AvatarImageView.framework */,
-				9A1310998C178DD639F78C6D6CAA05E9 /* Pods_LePigeonRebelle.framework */,
-				4DD04EE89DA5344B914E7382787B8E0B /* SkyFloatingLabelTextField.framework */,
+				838CE54BCC4229324A25A555C66781A0 /* DPDConstants.swift */,
+				F924B52346B7E7533B1022DA0C66F801 /* DPDKeyboardListener.swift */,
+				A379E383CFE4600602F691F89C942D05 /* DPDUIView+Extension.swift */,
+				190201886142D242B67C409AD6F8E8CB /* DropDown.swift */,
+				071C0CC77CB5F07EAF229787AD2F6AAD /* DropDown+Appearance.swift */,
+				4F1FB7DBEF8594AF82CA74D43A653383 /* DropDownCell.swift */,
+				7BADBC25BF37703F365AEF1D68FC9150 /* Resources */,
+				0DC9C1F620790207F4224F8C36FC7EF0 /* Support Files */,
 			);
-			name = Products;
+			name = DropDown;
+			path = DropDown;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -195,20 +288,6 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		E2896EC075ADBB1749FE4D1AFC85AE6D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3FC91D3CA5653975028EB63E6495A7B6 /* AvatarImageView.modulemap */,
-				9A8C0D23E8E7BF9D414EC939C3B8D0E1 /* AvatarImageView.xcconfig */,
-				E8212F0D6F7CC0443780111D19CA264A /* AvatarImageView-dummy.m */,
-				B158AA5761CCFE898661976BF604AA77 /* AvatarImageView-prefix.pch */,
-				1EFDBB7729902DCB9F6ACA7D05AD3091 /* AvatarImageView-umbrella.h */,
-				BEB13B956239ECAF68D5E19B2E384455 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AvatarImageView";
 			sourceTree = "<group>";
 		};
 		EB881091A3E1B0C83D15FD634A942696 /* Pods-LePigeonRebelle */ = {
@@ -232,19 +311,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		14544BB92A98D5872F7762717C06F110 /* Headers */ = {
+		1904CD5E5CEA9226AFC355E19C3EB159 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E2783F5C9F93E455FA70944DE405599 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+				2E7E74DF0C455B0BC43BFDD1D0163E64 /* DropDown-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B0B1CBA16B6119332089A93DB1D5F9B /* Headers */ = {
+		363B980061B76C0B89D288FF22992256 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FD99FFFE9D834712DB997DD4C3213F /* Pods-LePigeonRebelle-umbrella.h in Headers */,
+				54A5C4B1EAD012BD8E8B0A1D76F002A0 /* Pods-LePigeonRebelle-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,43 +335,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A32416AB1C6B73CEF562A69EDACC55D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18D7FE8212D376E9306B86C11C4E6F5 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AE41C10EE8BE4D0C2D24CCDED6D2A8A0 /* SkyFloatingLabelTextField */ = {
+		5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 023E7582D55D0AF18F7C8384AE8CB7EE /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildConfigurationList = 45143614893062803984DA50AB90C1D5 /* Build configuration list for PBXNativeTarget "DropDown" */;
 			buildPhases = (
-				A13F4B32498769471521E341E0420665 /* Sources */,
-				8B429EE973097615F61F7C994D2D1FB6 /* Frameworks */,
-				14544BB92A98D5872F7762717C06F110 /* Headers */,
+				ED45CA897A4B81CB8204042001D7AEE8 /* Sources */,
+				3FE28484C632D94C9779E4E74AE0BD29 /* Frameworks */,
+				D7D924A57BC65B5D41E46B156A8DCF2B /* Resources */,
+				1904CD5E5CEA9226AFC355E19C3EB159 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SkyFloatingLabelTextField;
-			productName = SkyFloatingLabelTextField;
-			productReference = 4DD04EE89DA5344B914E7382787B8E0B /* SkyFloatingLabelTextField.framework */;
+			name = DropDown;
+			productName = DropDown;
+			productReference = 52FA1F5F8361A47467EE66C4C076734E /* DropDown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AF929BD864AA642EC35693821C0338C8 /* Pods-LePigeonRebelle */ = {
+		BBAC196DCED6F41664D1FC41C7605FDF /* Pods-LePigeonRebelle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 206A8DB4F6F65C7BC9ECCEB36AF90AF9 /* Build configuration list for PBXNativeTarget "Pods-LePigeonRebelle" */;
+			buildConfigurationList = 38A8C64E9804E4A8D9BF9D5A5A6903A9 /* Build configuration list for PBXNativeTarget "Pods-LePigeonRebelle" */;
 			buildPhases = (
-				82693087E87D10DD2FA5EBF058DCBE71 /* Sources */,
-				33D58066C87B61D2466762720AEA280D /* Frameworks */,
-				2B0B1CBA16B6119332089A93DB1D5F9B /* Headers */,
+				B4D7188EE66DFCDA6435B0A34890EECE /* Sources */,
+				71EF98E59590825A92A248501740F270 /* Frameworks */,
+				363B980061B76C0B89D288FF22992256 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8347AA9DC6DE19D80B263711CC5C6C41 /* PBXTargetDependency */,
-				566274D509E6BA3F58ECB276B06D77DC /* PBXTargetDependency */,
+				525943D9A812B07FAEF26AB3972E9103 /* PBXTargetDependency */,
+				90F6B1DAFC7C1F79BFBE90B0C5C76FDA /* PBXTargetDependency */,
+				493309B8649F2309447326C297BC66CE /* PBXTargetDependency */,
 			);
 			name = "Pods-LePigeonRebelle";
 			productName = "Pods-LePigeonRebelle";
-			productReference = 9A1310998C178DD639F78C6D6CAA05E9 /* Pods_LePigeonRebelle.framework */;
+			productReference = E59FC50163412E80A77AE70953568AF0 /* Pods_LePigeonRebelle.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BC6A2806576FA0E8E5BF240ADEA645A9 /* AvatarImageView */ = {
@@ -309,7 +398,24 @@
 			);
 			name = AvatarImageView;
 			productName = AvatarImageView;
-			productReference = 9FA390AC6FCA01E4C5BDF3B07175DA23 /* AvatarImageView.framework */;
+			productReference = 22B36C0B314FFFE9DC1F4C2304E87B36 /* AvatarImageView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D09D1BD8CD9FC878CC72B24365956ED4 /* SkyFloatingLabelTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DA273B428EE589A2DEFE511E5C0BC77 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildPhases = (
+				7297A4AB50735055BA92E130353BD061 /* Sources */,
+				6E400CD1C19293982002D8EE9C9ECDF1 /* Frameworks */,
+				A32416AB1C6B73CEF562A69EDACC55D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyFloatingLabelTextField;
+			productName = SkyFloatingLabelTextField;
+			productReference = 439366C1D73D1569A94F3DA26C96ADB0 /* SkyFloatingLabelTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -329,23 +435,38 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C2265772ECC49DF242678E3979C75D45 /* Products */;
+			productRefGroup = 3184DEBE9CF981FF93B4F325CD7B1AF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BC6A2806576FA0E8E5BF240ADEA645A9 /* AvatarImageView */,
-				AF929BD864AA642EC35693821C0338C8 /* Pods-LePigeonRebelle */,
-				AE41C10EE8BE4D0C2D24CCDED6D2A8A0 /* SkyFloatingLabelTextField */,
+				5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */,
+				BBAC196DCED6F41664D1FC41C7605FDF /* Pods-LePigeonRebelle */,
+				D09D1BD8CD9FC878CC72B24365956ED4 /* SkyFloatingLabelTextField */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D7D924A57BC65B5D41E46B156A8DCF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C293AEA575D6E5186739D1B07805F2 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		82693087E87D10DD2FA5EBF058DCBE71 /* Sources */ = {
+		7297A4AB50735055BA92E130353BD061 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A10DF71A04A189EE3FC9A631683402A /* Pods-LePigeonRebelle-dummy.m in Sources */,
+				9A71339FF07B46DA5C97759B2014D3F4 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				0A58B1BDDFA29B6F501A3657FF7E2BA2 /* SkyFloatingLabelTextField.swift in Sources */,
+				FA22E72EE272044D2A0D3825ADB691F6 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				FD8F258EB8B2C93888410B2FB0576726 /* UITextField+fixCaretPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,38 +481,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A13F4B32498769471521E341E0420665 /* Sources */ = {
+		B4D7188EE66DFCDA6435B0A34890EECE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C09608A69D0D178ADE7E63AFF08C26C9 /* SkyFloatingLabelTextField-dummy.m in Sources */,
-				61EE35C1E8B991585D36E43673AE4CCE /* SkyFloatingLabelTextField.swift in Sources */,
-				18BBEB097DA24DE285386F703D589DA5 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
-				5183026C6A3110C5BA7C287806E3CB01 /* UITextField+fixCaretPosition.swift in Sources */,
+				E1354B29728E9BB486F760B20648DEEA /* Pods-LePigeonRebelle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED45CA897A4B81CB8204042001D7AEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A812E7811821F66B3B7499F6F1B513BA /* DPDConstants.swift in Sources */,
+				9D0221E27E37CDA9DF26DD3CFA56D75B /* DPDKeyboardListener.swift in Sources */,
+				A401CF18D15DF246F40FAC4E8F06CBC7 /* DPDUIView+Extension.swift in Sources */,
+				442ADADA3215E1E5CA1557E708D4228C /* DropDown+Appearance.swift in Sources */,
+				AC6581D9387744158B44BE683403C3BC /* DropDown-dummy.m in Sources */,
+				02CAE638EF1CEEBD6F5740498F9CA3F8 /* DropDown.swift in Sources */,
+				098F056D90AF9CD3FD60D8A81DF043B6 /* DropDownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		566274D509E6BA3F58ECB276B06D77DC /* PBXTargetDependency */ = {
+		493309B8649F2309447326C297BC66CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SkyFloatingLabelTextField;
-			target = AE41C10EE8BE4D0C2D24CCDED6D2A8A0 /* SkyFloatingLabelTextField */;
-			targetProxy = 221810F4D8559AEA80CB359D15C5EDE4 /* PBXContainerItemProxy */;
+			target = D09D1BD8CD9FC878CC72B24365956ED4 /* SkyFloatingLabelTextField */;
+			targetProxy = 48329919F854DEC0C0B675A5103943D7 /* PBXContainerItemProxy */;
 		};
-		8347AA9DC6DE19D80B263711CC5C6C41 /* PBXTargetDependency */ = {
+		525943D9A812B07FAEF26AB3972E9103 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AvatarImageView;
 			target = BC6A2806576FA0E8E5BF240ADEA645A9 /* AvatarImageView */;
-			targetProxy = 6EF30FEB71480A0687D0D2C0E2364A23 /* PBXContainerItemProxy */;
+			targetProxy = 3D3B67DF8EB40CFDE0003B40F80C0618 /* PBXContainerItemProxy */;
+		};
+		90F6B1DAFC7C1F79BFBE90B0C5C76FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = 5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */;
+			targetProxy = 42B426C988EE5F5FFC54DCA271260D5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0D4768173A975BC175F26A208B832860 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A8C0D23E8E7BF9D414EC939C3B8D0E1 /* AvatarImageView.xcconfig */;
+			baseConfigurationReference = 1E785EB6D167C4DF7AB4CA231563AFBE /* AvatarImageView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -476,40 +614,9 @@
 			};
 			name = Release;
 		};
-		221411C40C4363193704F9B6F21D4426 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FBA9606B79860B96D69AA22E6895934 /* SkyFloatingLabelTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		2C5795335CF8748FE668D4279026D2E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A8C0D23E8E7BF9D414EC939C3B8D0E1 /* AvatarImageView.xcconfig */;
+			baseConfigurationReference = 1E785EB6D167C4DF7AB4CA231563AFBE /* AvatarImageView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -538,7 +645,7 @@
 			};
 			name = Debug;
 		};
-		3AC798A0EB5E986150804B717D4F91C2 /* Release */ = {
+		3CA3923739610AF1E586028A7BB567A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16A065E023F1420353A0B4FF8D39E824 /* Pods-LePigeonRebelle.release.xcconfig */;
 			buildSettings = {
@@ -565,6 +672,70 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49F4153A42BF9645D2995B787DC99E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D54FBD8861B622B04F104ADC49BF072 /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A0BC1B55E1EAB3F2F2D668D84524218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA54D17C4B92602D08D2D4F9BB4CE18 /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -632,7 +803,7 @@
 			};
 			name = Debug;
 		};
-		926E07FDC345172928405E98679481E4 /* Debug */ = {
+		82E9719283512F77832E891FCFCAEE46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 133918A86BAF9C183033BA4EEF1C4E67 /* Pods-LePigeonRebelle.debug.xcconfig */;
 			buildSettings = {
@@ -666,9 +837,40 @@
 			};
 			name = Debug;
 		};
-		9BB1F706C7546E9F7791694361A99CC0 /* Release */ = {
+		B86E34FBA688ECECB05399A8ED367988 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FBA9606B79860B96D69AA22E6895934 /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = 6D54FBD8861B622B04F104ADC49BF072 /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E00DB95F5C1E8A1E508B290C3CA07D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA54D17C4B92602D08D2D4F9BB4CE18 /* SkyFloatingLabelTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -689,36 +891,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		023E7582D55D0AF18F7C8384AE8CB7EE /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				221411C40C4363193704F9B6F21D4426 /* Debug */,
-				9BB1F706C7546E9F7791694361A99CC0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		206A8DB4F6F65C7BC9ECCEB36AF90AF9 /* Build configuration list for PBXNativeTarget "Pods-LePigeonRebelle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				926E07FDC345172928405E98679481E4 /* Debug */,
-				3AC798A0EB5E986150804B717D4F91C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -728,11 +911,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		38A8C64E9804E4A8D9BF9D5A5A6903A9 /* Build configuration list for PBXNativeTarget "Pods-LePigeonRebelle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82E9719283512F77832E891FCFCAEE46 /* Debug */,
+				3CA3923739610AF1E586028A7BB567A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45143614893062803984DA50AB90C1D5 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B86E34FBA688ECECB05399A8ED367988 /* Debug */,
+				49F4153A42BF9645D2995B787DC99E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		62C0AD2CB9C7E854567FB418085A3793 /* Build configuration list for PBXNativeTarget "AvatarImageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C5795335CF8748FE668D4279026D2E0 /* Debug */,
 				0D4768173A975BC175F26A208B832860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DA273B428EE589A2DEFE511E5C0BC77 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00DB95F5C1E8A1E508B290C3CA07D14 /* Debug */,
+				4A0BC1B55E1EAB3F2F2D668D84524218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
