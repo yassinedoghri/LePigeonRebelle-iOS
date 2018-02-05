@@ -89,9 +89,7 @@ class FriendsViewController: UIViewController, UITableViewDataSource, UITableVie
         let friend = users[indexPath.row]
         cell.memberName.text = friend.name
         cell.avatarImageView.dataSource = DataSource(userName: friend.name!)
-//        cell.icon.image = UIImage(named: "icon-emotion-happyx3")
-//        cell.icon.contentMode = .scaleAspectFit
-        
+
         return cell
     }
     
